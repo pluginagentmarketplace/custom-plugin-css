@@ -1,335 +1,333 @@
-# 🚀 Developer Roadmap Plugin for Claude Code
+# 🎨 Custom Plugin CSS
 
-The ultimate comprehensive learning platform for developers. Master any of **71 different developer roles** with structured guidance from **7 specialized agents**, practice with **100+ hands-on projects**, and build your dream career.
-
-## 🎯 Plugin Overview
-
-Transform your career with a modern, intelligent learning platform that provides:
-
-- **71 Developer Roles** across all specializations
-- **7 Specialized Agents** each with deep expertise
-- **7 Comprehensive Skills** with code examples & best practices
-- **100+ Real-World Projects** from beginner to expert
-- **Smart Assessment Tools** to evaluate your progress
-- **Personalized Learning Paths** tailored to your goals
-
-## ✨ Key Features
-
-### 🎓 7 Specialized Agents
-
-| Agent | Focus | Roles |
-|-------|-------|-------|
-| **#1: Fundamentals** | Web Basics, HTML, CSS, JavaScript, Git | Frontend, Backend, Full Stack, HTML, CSS |
-| **#2: Languages** | 10+ Languages, DSA, Patterns | Python, JavaScript, Java, Go, Rust, C++, PHP, Kotlin, Shell, TypeScript |
-| **#3: Frameworks** | React, Vue, Angular, Databases, APIs | React, Next.js, Vue, Angular, Node.js, Spring Boot, GraphQL |
-| **#4: Mobile** | Cross-Platform, Native, Games | React Native, Flutter, Swift, Kotlin, Games, Game Servers |
-| **#5: Cloud** | AWS, Docker, Kubernetes, Terraform | AWS, DevOps, Docker, Kubernetes, Terraform, Linux |
-| **#6: Data & AI** | ML, Data Science, LLMs, Prompt Eng | Data Analyst, Data Engineer, ML, MLOps, AI, Prompt Engineering |
-| **#7: Advanced** | Architecture, Security, Leadership | Architect, System Design, Security, Blockchain, Product Manager |
-
-### 📚 4 Slash Commands
-
-```bash
-/learn [role]           # Start learning a specific role
-/browse-agent [number]  # Explore agent expertise
-/assess [role]          # Evaluate your knowledge
-/projects [agent]       # Find hands-on projects
-```
-
-### 🛠️ 7 Comprehensive Skills
-
-Each skill includes:
-- 📖 Quick start guides
-- 💻 Real code examples
-- 🎯 Best practices
-- 📚 Resources & references
-- 🔗 Real-world applications
-
-Skills:
-1. **web-fundamentals** - HTML, CSS, JS, responsive design
-2. **programming-languages** - Multi-language mastery
-3. **frameworks-databases** - Full-stack technologies
-4. **mobile-games** - Mobile apps & game development
-5. **cloud-devops** - Infrastructure & deployment
-6. **data-ai** - Data science & AI/ML
-7. **specialization** - Advanced domains
-
-### 🎮 100+ Hands-On Projects
-
-- Beginner to Expert difficulty levels
-- Real portfolio pieces
-- Full deployment guides
-- Code examples included
-- Assessment & feedback
-
-## 📥 Installation
-
-### Option 1: Claude Code (Recommended)
-Single command to add the plugin:
-
-```bash
-claude add developer-roadmap-plugin
-```
-
-Or load from local directory:
-```bash
-claude load ./developer-roadmap-plugin
-```
-
-### Option 2: Manual Setup
-Clone and place in Claude Code plugins directory:
-
-```bash
-git clone https://github.com/pluginagentmarketplace/developer-roadmap-plugin.git
-# Place in ~/.claude-code/plugins/developer-roadmap-plugin
-```
+The ultimate CSS mastery plugin for Claude Code. Master CSS from fundamentals to advanced techniques with **5 specialized agents**, **5 comprehensive skills**, **4 interactive commands**, and **50+ hands-on projects**.
 
 ## 🚀 Quick Start
 
-### 1. Explore Roles
+### Install (Single Command)
 ```bash
-/learn            # See all 71 roles
-/learn react      # Start React learning path
-/learn devops     # Start DevOps path
+claude add custom-plugin-css
 ```
 
-### 2. Understand Agents
+### Start Learning
 ```bash
-/browse-agent           # See all agents
-/browse-agent 3         # Frameworks & Databases expert
-/browse-agent 7         # Advanced specialization
+/learn-css fundamentals
+/css-playground flexbox-intro beginner
+/css-inspector optimize
+/css-projects beginner
 ```
 
-### 3. Assess Knowledge
+## ✨ Key Features
+
+### 🎓 5 Specialized Agents
+
+| Agent | Focus | Duration |
+|-------|-------|----------|
+| **#1: Fundamentals** | Selectors, box model, typography, colors, positioning | 20-40h |
+| **#2: Layouts** | Flexbox, CSS Grid, responsive design | 30-50h |
+| **#3: Frameworks** | Tailwind, Bootstrap, SASS, CSS architecture | 35-55h |
+| **#4: CSS-in-JS** | styled-components, Emotion, CSS Modules | 40-60h |
+| **#5: Advanced** | Animations, transforms, performance, accessibility | 50-80h |
+
+### 📚 5 Comprehensive Skills
+
+Each skill includes:
+- 🎯 Quick start guide
+- 💻 Real code examples
+- 📖 Best practices
+- 🔧 Tools & resources
+- 🚀 Performance tips
+
+**Skills:**
+1. **css-fundamentals** - Selectors, box model, typography
+2. **css-layouts** - Flexbox & CSS Grid
+3. **css-frameworks** - Tailwind, Bootstrap, SASS
+4. **css-in-js** - styled-components, Emotion
+5. **css-advanced** - Animations, transforms, optimization
+
+### 🛠️ 4 Interactive Commands
+
 ```bash
-/assess quick           # Quick self-evaluation
-/assess detailed        # Comprehensive assessment
-/assess react           # Role-specific assessment
+/learn-css [topic]       # Learn CSS topics with structured paths
+/css-playground [cat]    # Interactive CSS examples & playground
+/css-inspector [action]  # Analyze, debug & optimize CSS
+/css-projects [level]    # 50+ hands-on projects
 ```
 
-### 4. Find Projects
-```bash
-/projects               # All projects
-/projects react advanced     # Advanced React projects
-/projects agent-5 beginner   # DevOps beginner projects
-```
+### 🎯 50+ Projects
 
-## 📊 Plugin Statistics
+- **10 Beginner** (20-40 hours each)
+- **10 Intermediate** (40-80 hours each)
+- **10 Advanced** (80-150 hours each)
+- **20+ Specialized** (frameworks, animations, systems)
 
-- **71 Developer Roles** - Complete career coverage
-- **7 Agents** - Specialized expertise
-- **7 Skills** - Comprehensive guides
-- **100+ Projects** - Real-world practice
-- **1000+ Hours** - Learning content
-- **500+ Code Examples** - Reference implementations
-- **200+ Use Cases** - Practical scenarios
-
-## 🎯 Learning Paths
-
-### Frontend Developer Path
-1. **Start** → Agent #1 (Fundamentals)
-2. **Learn** → `/learn frontend`
-3. **Build** → `/projects agent-3 beginner` → intermediate → advanced
-4. **Master** → Agent #3 (Frameworks)
-5. **Specialize** → React, Vue, or Angular
-
-### DevOps Engineer Path
-1. **Start** → Agent #1 (Fundamentals)
-2. **Learn** → `/learn devops`
-3. **Build** → `/projects agent-5 beginner` → intermediate → advanced
-4. **Master** → Agent #5 (Cloud & DevOps)
-5. **Specialize** → AWS, Kubernetes, or Terraform
-
-### Data Scientist Path
-1. **Start** → Agent #2 (Python Language)
-2. **Learn** → `/learn data-engineer` or `machine-learning`
-3. **Build** → `/projects agent-6 beginner` → intermediate → advanced
-4. **Master** → Agent #6 (Data & AI)
-5. **Specialize** → ML Engineering or MLOps
-
-### Software Architect Path
-1. **Complete** → Any specialization (2-5 years)
-2. **Learn** → `/learn system-design`
-3. **Deepen** → `/learn software-architect`
-4. **Master** → Agent #7 (Advanced Specialization)
-5. **Lead** → Architectural decisions & mentoring
-
-## 🎓 Complete Role List
-
-### Core Paths (7)
-Frontend • Backend • Full Stack • DevOps • DevOps Beginner • Frontend Beginner • Backend Beginner
-
-### Languages (11)
-JavaScript • TypeScript • Python • Java • C++ • PHP • Go • Rust • Kotlin • Shell/Bash • Computer Science
-
-### Frontend Frameworks (7)
-React • Next.js • Vue • Angular • React Native • Flutter • Swift
-
-### Backend & Databases (8)
-Node.js • Spring Boot • ASP.NET Core • GraphQL • PostgreSQL • MongoDB • Redis • SQL
-
-### Mobile & Games (6)
-Android • iOS • Game Developer • Game Server Developer
-
-### Cloud & Infrastructure (6)
-AWS • Cloudflare • Docker • Kubernetes • Terraform • Linux
-
-### Data & AI (9)
-Data Analyst • Data Engineer • Machine Learning • MLOps • AI Engineer • AI Red Teaming • AI Agents • BI Analyst • Prompt Engineering
-
-### Advanced Specializations (12)
-Software Architect • System Design • QA • Blockchain • API Design • Cybersecurity • Product Manager • Engineering Manager • Technical Writer • Design System • DevRel • UX Designer
-
-## 🔧 Plugin Architecture
+## 📊 Plugin Overview
 
 ```
-developer-roadmap-plugin/
+Custom Plugin CSS/
 ├── .claude-plugin/
-│   └── plugin.json                    # Plugin manifest
-├── agents/                            # 7 Agent guides
-│   ├── 01-fundamentals.md
-│   ├── 02-programming-languages.md
-│   ├── 03-frameworks-databases.md
-│   ├── 04-mobile-games.md
-│   ├── 05-cloud-devops.md
-│   ├── 06-data-ai.md
-│   └── 07-specialization.md
-├── commands/                          # 4 Slash commands
-│   ├── learn.md
-│   ├── browse-agent.md
-│   ├── assess.md
-│   └── projects.md
-├── skills/                            # 7 Skills
+│   └── plugin.json ........................ Plugin manifest
+├── agents/ .............................. 5 Agent files
+│   ├── 01-css-fundamentals.md
+│   ├── 02-css-layouts.md
+│   ├── 03-css-frameworks.md
+│   ├── 04-css-in-js.md
+│   └── 05-css-advanced.md
+├── commands/ ........................... 4 Commands
+│   ├── learn-css.md
+│   ├── css-playground.md
+│   ├── css-inspector.md
+│   └── css-projects.md
+├── skills/ ............................. 5 Skills
 │   ├── fundamentals/SKILL.md
-│   ├── languages/SKILL.md
-│   ├── frameworks-databases/SKILL.md
-│   ├── mobile-games/SKILL.md
-│   ├── cloud-devops/SKILL.md
-│   ├── data-ai/SKILL.md
-│   └── specialization/SKILL.md
+│   ├── layouts/SKILL.md
+│   ├── frameworks/SKILL.md
+│   ├── css-in-js/SKILL.md
+│   └── advanced/SKILL.md
 ├── hooks/
-│   └── hooks.json                    # Automation hooks
+│   └── hooks.json ...................... Automation hooks
 └── README.md
 ```
 
-## 💡 Use Cases
+## 🎯 Learning Paths
 
-### 🎯 Career Transition
-Switch careers with structured learning paths and assessment tools.
+### Path 1: Complete Beginner → Expert
+1. `/learn-css fundamentals` (20-40h)
+2. `/learn-css layouts` (30-50h)
+3. `/learn-css responsive` (20-30h)
+4. `/learn-css animations` (25-40h)
+5. `/learn-css frameworks` (35-55h)
+**Total: 130-215 hours**
 
-### 📚 Skill Development
-Build specific skills with projects and mentor guidance.
+### Path 2: Intermediate → Expert
+1. `/learn-css layouts`
+2. `/learn-css frameworks`
+3. `/learn-css css-in-js`
+4. `/learn-css performance`
+**Total: 100-180 hours**
 
-### 🚀 Interview Preparation
-Master system design, DSA, and behavioral interviews.
+### Path 3: Advanced Focus
+1. `/learn-css animations`
+2. `/learn-css transforms`
+3. `/learn-css performance`
+4. `/learn-css design-systems`
+**Total: 80-150 hours**
 
-### 🎓 Educational Programs
-Complete training curriculum for bootcamps and courses.
+## 💡 Usage Examples
 
-### 👔 Corporate Training
-Upskill teams with personalized learning paths.
+### Learn a Topic
+```bash
+/learn-css fundamentals
+```
+Get structured lessons with examples and best practices.
 
-### 📈 Career Growth
-Advance to senior/leadership roles with specialized paths.
+### Practice Interactively
+```bash
+/css-playground flexbox-intro beginner
+```
+Explore interactive examples with live code editor.
 
-## 🎯 For Different Users
+### Debug Your CSS
+```bash
+/css-inspector optimize
+```
+Get optimization suggestions and performance tips.
 
-### Beginners
-- Start with `/learn fundamentals`
-- Follow Agent #1 guidance
-- Build simple projects first
-- Use `/assess quick` to track progress
+### Build Projects
+```bash
+/css-projects intermediate
+```
+Find engaging projects matching your skill level.
 
-### Career Changers
-- Run `/assess detailed` to find gaps
-- Choose target role: `/learn [role]`
-- Focus on weak areas
-- Build portfolio projects
+## 🎓 Topics Covered
 
-### Mid-Level Developers
-- Explore specializations
-- Master advanced concepts
-- Lead technical projects
-- Mentor junior developers
+### Fundamentals ✓
+- Selectors & specificity
+- Box model & margins
+- Typography & colors
+- Display & positioning
+- Units & values
 
-### Senior Developers
-- Explore `/browse-agent 7` (Advanced)
-- System design mastery
-- Architecture & leadership
-- Strategic thinking
+### Layouts ✓
+- Flexbox (flex-direction, justify-content, align-items)
+- CSS Grid (grid-template, areas, auto-fit)
+- Responsive design & media queries
+- Mobile-first approach
+- Layout patterns & techniques
+
+### Frameworks ✓
+- **Tailwind CSS** - Utility-first approach
+- **Bootstrap** - Component framework
+- **SASS/SCSS** - CSS preprocessing
+- **LESS** - Dynamic styles
+- **PostCSS** - CSS transformations
+
+### CSS-in-JS ✓
+- **styled-components** - CSS-in-JS library
+- **Emotion** - Lightweight CSS-in-JS
+- **CSS Modules** - Local scoping
+- **BEM Methodology** - Scalable architecture
+- **Atomic CSS** - Utility patterns
+
+### Advanced ✓
+- Keyframe animations & transitions
+- 2D & 3D transforms
+- Performance optimization
+- CSS accessibility (WCAG)
+- Advanced selectors (:has, :is, :where)
+- Container queries & cutting-edge CSS
+
+## 📈 Progression Map
+
+```
+Beginner Projects (Simple Forms, Cards, Layouts)
+            ↓
+Master Fundamentals & Layouts
+            ↓
+Intermediate Projects (Components, Animations)
+            ↓
+Learn Frameworks & Advanced Techniques
+            ↓
+Advanced Projects (Design Systems, Optimization)
+            ↓
+Expert Portfolio (Production-Ready Code)
+```
 
 ## 🌟 Plugin Highlights
 
-✅ **71 Roles Covered** - Every career path in development
-✅ **7 Expert Agents** - Specialized knowledge
-✅ **100+ Projects** - Real portfolio pieces
-✅ **Smart Assessment** - Know your gaps
-✅ **Best Practices** - Industry standards
-✅ **Real Examples** - Practical code
-✅ **Career Paths** - Clear progression
+✅ **5 Agents** - Specialized expertise
+✅ **5 Skills** - Comprehensive guides with code
+✅ **4 Commands** - Interactive learning tools
+✅ **50+ Projects** - Real portfolio pieces
+✅ **100+ Examples** - Practical code snippets
+✅ **250+ Hours** - Complete learning content
+✅ **Production Ready** - Professional quality
 ✅ **Free & Open** - Accessible to all
 
-## 📖 Learning Resources
+## 🎯 For Different Users
 
-Each skill includes:
-- Official documentation links
-- Tutorial references
-- Best practices guides
-- Real-world examples
-- Code snippets
-- Performance tips
-- Security guidelines
+### 🔰 Complete Beginners
+- Start: `/learn-css fundamentals`
+- Follow: Beginner projects
+- Time: 130-215 hours to expert
 
-## 🤝 Contributing
+### 🚀 Experienced Developers
+- Start: `/learn-css layouts`
+- Jump to: Intermediate/advanced
+- Time: 80-150 hours to mastery
 
-Contributions welcome! Areas for enhancement:
-- Additional projects
-- More role specializations
-- Expanded code examples
-- Video links
-- Challenge problems
-- Interview questions
+### 🎨 Designers Learning Code
+- Start: `/learn-css fundamentals`
+- Focus: Responsive design & frameworks
+- Time: 100-150 hours
+
+### 💼 Interview Preparation
+- Study: All 5 agents systematically
+- Practice: CSS projects portfolio
+- Time: 150-200 hours
+
+## 📚 Resources Included
+
+Each topic includes:
+- **Core Concepts** - Explained clearly
+- **Code Examples** - Practical snippets
+- **Best Practices** - Industry standards
+- **Common Mistakes** - What to avoid
+- **Projects** - Hands-on practice
+- **Performance Tips** - Optimization
+- **Tools** - Recommended resources
+
+## 🔧 Agent Tools
+
+### CSS Inspector Features
+- 📊 Performance analysis
+- 🔍 Accessibility checking
+- 🐛 Debugging assistance
+- ⚡ Optimization suggestions
+- 📈 Metrics & metrics
+
+### CSS Playground Features
+- 💻 Live code editor
+- 👁️ Real-time preview
+- 📚 Explanations
+- 🔗 Variation examples
+- 💾 Save & share
+
+### Project Builder
+- 📋 Project descriptions
+- ✅ Feature checklist
+- 🎯 Learning outcomes
+- 🚀 Deployment guide
+- 📝 Code review guide
+
+## 🚀 Getting Started Now
+
+1. **Install Plugin**
+   ```bash
+   claude add custom-plugin-css
+   ```
+
+2. **Choose Your Path**
+   ```bash
+   /learn-css fundamentals    # Beginner
+   /learn-css layouts         # Intermediate
+   /learn-css advanced        # Advanced
+   ```
+
+3. **Practice**
+   ```bash
+   /css-playground [category] [difficulty]
+   /css-projects [difficulty]
+   ```
+
+4. **Optimize**
+   ```bash
+   /css-inspector optimize
+   /css-inspector performance
+   ```
+
+## 📊 Statistics
+
+- **5 Agents** - Specialized expertise
+- **5 Skills** - Comprehensive guides
+- **4 Commands** - Interactive tools
+- **50+ Projects** - Real practice
+- **100+ Code Examples** - Practical reference
+- **250+ Hours** - Complete content
+- **All Skill Levels** - Beginner to expert
+
+## 🎓 Certifications & Goals
+
+After completing this plugin, you'll be able to:
+
+✓ Master CSS fundamentals
+✓ Create responsive layouts
+✓ Use modern frameworks
+✓ Optimize CSS performance
+✓ Ensure accessibility
+✓ Build design systems
+✓ Write production-ready CSS
+✓ Mentor others in CSS
 
 ## 📄 License
 
 MIT License - Free for personal and commercial use
 
-## 🔗 Links
+## 🔗 Resources
 
-- **GitHub:** https://github.com/pluginagentmarketplace/developer-roadmap-plugin
-- **Issues:** https://github.com/pluginagentmarketplace/developer-roadmap-plugin/issues
-- **Discussions:** https://github.com/pluginagentmarketplace/developer-roadmap-plugin/discussions
+- **GitHub:** https://github.com/pluginagentmarketplace/custom-plugin-css
+- **Claude Docs:** https://docs.claude.com
 
-## 📞 Support
+## 💬 Support
 
-Need help? Try these resources:
-
-1. **In-Plugin Help:** `/browse-agent` → `/help`
-2. **Documentation:** Check agent & skill markdown files
-3. **GitHub Issues:** Report bugs or request features
-4. **Community:** Join discussions & share experiences
-
-## 🎓 Getting Started Now
-
-```bash
-# 1. Load the plugin
-claude add developer-roadmap-plugin
-
-# 2. Explore your options
-/learn
-
-# 3. Start your journey
-/learn [your-target-role]
-
-# 4. Track progress
-/assess
-
-# 5. Build projects
-/projects
-```
+Need help? Check:
+- Agent guides (detailed expertise)
+- Skill files (how-to guides)
+- Command documentation (quick reference)
+- Project descriptions (requirements)
 
 ---
 
-**Transform your developer career today. Choose your path, master your skills, and build amazing things! 🚀**
+**Master CSS. Build beautiful web experiences. Start now! 🎨**
 
-Version: 1.0.0 | Last Updated: 2024 | License: MIT
+**Version:** 1.0.0 | **Status:** Production Ready ✅ | **License:** MIT

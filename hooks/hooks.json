@@ -1,20 +1,20 @@
 {
   "hooks": [
     {
-      "name": "learning-progress-tracker",
-      "description": "Tracks user's learning progress across agents and roles",
-      "events": ["command-executed", "agent-invoked"],
+      "name": "css-learning-tracker",
+      "description": "Tracks user's CSS learning progress across topics",
+      "events": ["command-executed", "topic-completed"],
       "enabled": true,
       "config": {
-        "track_completions": true,
-        "store_progress": true,
-        "notify_milestones": true
+        "track_progress": true,
+        "milestone_notifications": true,
+        "progress_persistence": true
       }
     },
     {
       "name": "skill-recommendation-engine",
-      "description": "Recommends skills based on selected role and assessment",
-      "events": ["role-selected", "assessment-completed"],
+      "description": "Recommends CSS skills based on current level and goals",
+      "events": ["topic-selected", "assessment-completed"],
       "enabled": true,
       "config": {
         "personalize": true,
@@ -23,58 +23,36 @@
       }
     },
     {
-      "name": "project-validator",
-      "description": "Validates project completion and provides feedback",
-      "events": ["project-started", "project-submitted"],
+      "name": "css-code-analyzer",
+      "description": "Analyzes and provides feedback on CSS code",
+      "events": ["code-submitted", "inspector-invoked"],
       "enabled": true,
       "config": {
-        "validate_requirements": true,
-        "provide_feedback": true,
+        "check_performance": true,
+        "check_accessibility": true,
         "suggest_improvements": true
       }
     },
     {
-      "name": "agent-selector",
-      "description": "Intelligently routes users to appropriate agents",
-      "events": ["query-received"],
+      "name": "project-validator",
+      "description": "Validates CSS project completion and provides feedback",
+      "events": ["project-submitted"],
       "enabled": true,
       "config": {
-        "context_awareness": true,
-        "auto_routing": true,
-        "multi_agent_support": true
-      }
-    },
-    {
-      "name": "assessment-processor",
-      "description": "Processes assessment results and creates learning plans",
-      "events": ["assessment-submitted"],
-      "enabled": true,
-      "config": {
-        "score_calculation": true,
-        "gap_analysis": true,
-        "recommendation_generation": true
+        "validate_requirements": true,
+        "provide_feedback": true,
+        "suggest_enhancements": true
       }
     },
     {
       "name": "content-curator",
-      "description": "Curates and suggests relevant content based on progress",
-      "events": ["learning-milestone-reached", "user-query"],
+      "description": "Curates relevant CSS content based on user progress",
+      "events": ["learning-milestone-reached"],
       "enabled": true,
       "config": {
-        "filter_by_level": true,
         "personalize_content": true,
-        "suggest_next_steps": true
-      }
-    },
-    {
-      "name": "community-connector",
-      "description": "Connects learners with community resources and peers",
-      "events": ["learning-completed", "help-requested"],
-      "enabled": true,
-      "config": {
-        "suggest_communities": true,
-        "provide_resources": true,
-        "enable_networking": true
+        "suggest_next_steps": true,
+        "difficulty_matching": true
       }
     }
   ],

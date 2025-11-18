@@ -1,112 +1,123 @@
 ---
-name: web-fundamentals
-description: Learn HTML, CSS, JavaScript basics, responsive design, and web fundamentals. Build semantic web pages and master core concepts every web developer needs. Use when learning frontend/backend basics, responsive design, or web accessibility.
+name: css-fundamentals
+description: Master CSS selectors, box model, typography, colors, and positioning. Build strong CSS foundations with practical examples and best practices.
 ---
 
-# Web Fundamentals Skill
+# CSS Fundamentals Skill
 
 ## Quick Start
 
-Master the essential building blocks of web development:
+### Basic Selector Examples
+```css
+/* Element selector */
+p { color: blue; }
 
-```html
-<!-- Semantic HTML5 Structure -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <nav>Navigation</nav>
-    </header>
-    <main>
-        <article>
-            <h1>Article Title</h1>
-            <p>Content here</p>
-        </article>
-    </main>
-    <footer>Footer</footer>
-    <script src="script.js"></script>
-</body>
-</html>
+/* Class selector */
+.primary { font-weight: bold; }
+
+/* ID selector */
+#header { background: navy; }
+
+/* Attribute selector */
+input[type="text"] { border: 1px solid gray; }
+
+/* Pseudo-class */
+a:hover { color: red; }
+
+/* Pseudo-element */
+p::first-line { font-weight: bold; }
 ```
 
-## Core Web Fundamentals
+### Box Model
+```css
+.box {
+  width: 300px;
+  padding: 20px;
+  border: 2px solid black;
+  margin: 30px;
+  box-sizing: border-box; /* Include padding & border in width */
+}
+```
 
-### HTML5 Essentials
-- **Semantic Elements:** `<header>`, `<nav>`, `<main>`, `<article>`, `<section>`, `<footer>`
-- **Forms:** Input types, validation, accessibility attributes
-- **Meta Tags:** Viewport, charset, SEO optimization
-- **Accessibility:** ARIA labels, semantic markup, keyboard navigation
+### Typography
+```css
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
 
-### CSS Mastery
-- **Selectors:** Class, ID, attribute, pseudo-class, pseudo-element
-- **Layout:** Flexbox, CSS Grid, positioning
-- **Responsive Design:** Media queries, mobile-first approach
-- **Animations:** Transitions, keyframes, transforms
-- **CSS Variables:** Custom properties for reusability
+h1 { font-size: 2rem; }
+p { font-weight: normal; }
+```
 
-### JavaScript Fundamentals
-- **DOM Manipulation:** querySelector, addEventListener, DOM methods
-- **ES6+:** Arrow functions, const/let, destructuring, spread operator
-- **Async JavaScript:** Promises, async/await, fetch API
-- **Modules:** Import/export, ES6 modules
+### Colors
+```css
+/* Different color formats */
+.color1 { color: #FF5733; }           /* Hex */
+.color2 { color: rgb(255, 87, 51); }  /* RGB */
+.color3 { color: hsl(10, 100%, 60%); }/* HSL */
+.color4 { color: rgba(255, 87, 51, 0.8); } /* Transparency */
+```
+
+### Positioning
+```css
+/* Static (default) */
+.static { position: static; }
+
+/* Relative */
+.relative { position: relative; top: 10px; left: 20px; }
+
+/* Absolute */
+.absolute { position: absolute; top: 50px; right: 20px; }
+
+/* Fixed */
+.fixed { position: fixed; bottom: 0; left: 0; }
+
+/* Sticky */
+.sticky { position: sticky; top: 0; }
+```
+
+## Key Concepts
+
+### Selector Specificity
+- Element: 1 point
+- Class/Attribute: 10 points
+- ID: 100 points
+- Inline: 1000 points
+
+### Box Model Calculation
+```
+Total Width = width + padding + border + margin
+```
+
+### Text Properties
+- **font-family** - Font type
+- **font-size** - Text size
+- **font-weight** - Boldness
+- **text-align** - Horizontal alignment
+- **line-height** - Vertical spacing
+
+### Common Colors
+- Named: red, blue, green
+- Hex: #FF0000
+- RGB: rgb(255, 0, 0)
+- HSL: hsl(0, 100%, 50%)
 
 ## Best Practices
 
-### Accessibility (a11y)
-- Semantic HTML
-- Color contrast ratios
-- Keyboard navigation
-- Screen reader compatibility
-- WCAG 2.1 standards
+✓ Use classes for styling (avoid IDs)
+✓ Keep specificity low
+✓ Use semantic HTML
+✓ Organize CSS logically
+✓ Comment complex styles
+✓ Maintain consistent naming
 
-### Performance Optimization
-- Minimize CSS/JS files
-- Image optimization
-- Lazy loading
-- Critical rendering path
-- Core Web Vitals (LCP, FID, CLS)
+## When to Use
 
-### SEO Optimization
-- Semantic HTML
-- Meta descriptions
-- Structured data (Schema.org)
-- Fast page load
-- Mobile responsiveness
-
-## Learning Resources
-
-- **MDN Web Docs** - Comprehensive web standards
-- **CSS Tricks** - Advanced CSS techniques
-- **JavaScript.info** - JavaScript deep-dive
-- **WebAIM** - Accessibility guidelines
-- **Web.dev** - Performance & best practices
-
-## Practice Projects
-
-1. **Personal Portfolio** - Showcase your work
-2. **Landing Page** - Marketing-style design
-3. **Blog Site** - Multi-page content
-4. **Todo App** - JavaScript interaction
-5. **Responsive Gallery** - CSS Grid/Flexbox
-
-## Common Use Cases
-
-### When to Use This Skill
-- Starting web development journey
-- Building accessible websites
-- Learning responsive design
-- Understanding web standards
-- Improving accessibility
-
-### Real-World Applications
-- Company websites
-- Landing pages
-- Progressive Web Apps (PWA) foundations
-- Mobile-responsive design
-- Accessible web applications
+- Starting CSS journey
+- Learning core concepts
+- Building web foundations
+- Understanding design principles
