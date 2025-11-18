@@ -1,0 +1,143 @@
+{
+  "name": "Developer Roadmap Plugin",
+  "version": "1.0.0",
+  "id": "developer-roadmap-plugin",
+  "description": "Comprehensive learning platform with 71 developer roles, 7 specialized agents, and 100+ hands-on projects. Master your career path with personalized learning, skill assessment, and professional development.",
+  "author": {
+    "name": "Developer Roadmap Team",
+    "url": "https://github.com/pluginagentmarketplace"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pluginagentmarketplace/developer-roadmap-plugin.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "learning",
+    "developer",
+    "roadmap",
+    "career",
+    "skills",
+    "education",
+    "projects",
+    "training"
+  ],
+  "agents": [
+    {
+      "name": "Web Development Fundamentals",
+      "id": "01-fundamentals",
+      "description": "Master the core foundations of web development with Frontend, Backend, Full Stack, HTML, CSS, and version control."
+    },
+    {
+      "name": "Programming Languages & Computer Science",
+      "id": "02-programming-languages",
+      "description": "Master 10+ programming languages and understand fundamental computer science concepts, data structures, and algorithms."
+    },
+    {
+      "name": "Frameworks & Database Technologies",
+      "id": "03-frameworks-databases",
+      "description": "Master modern web frameworks (React, Vue, Angular) and database technologies (SQL, MongoDB, GraphQL)."
+    },
+    {
+      "name": "Mobile & Game Development",
+      "id": "04-mobile-games",
+      "description": "Build cross-platform mobile apps with React Native and Flutter, native iOS/Android, and games."
+    },
+    {
+      "name": "Cloud & DevOps",
+      "id": "05-cloud-devops",
+      "description": "Master cloud platforms (AWS), containerization (Docker, Kubernetes), and infrastructure automation (Terraform)."
+    },
+    {
+      "name": "Data & Artificial Intelligence",
+      "id": "06-data-ai",
+      "description": "Master data science, machine learning, MLOps, AI engineering, and prompt engineering with LLMs."
+    },
+    {
+      "name": "Advanced Specialization",
+      "id": "07-specialization",
+      "description": "Advanced roles: Software Architecture, System Design, Cybersecurity, Blockchain, Leadership, and specialized domains."
+    }
+  ],
+  "commands": [
+    {
+      "name": "learn",
+      "description": "Start your personalized learning journey through 71 developer roles"
+    },
+    {
+      "name": "browse-agent",
+      "description": "Explore the 7 specialized agents and their expertise domains"
+    },
+    {
+      "name": "assess",
+      "description": "Evaluate your skills and knowledge across different roles and technologies"
+    },
+    {
+      "name": "projects",
+      "description": "Discover 100+ hands-on projects to build your portfolio"
+    }
+  ],
+  "skills": [
+    {
+      "name": "web-fundamentals",
+      "id": "fundamentals",
+      "description": "Learn HTML, CSS, JavaScript basics, responsive design, and web accessibility"
+    },
+    {
+      "name": "programming-languages",
+      "id": "languages",
+      "description": "Master 10+ programming languages and computer science fundamentals"
+    },
+    {
+      "name": "frameworks-databases",
+      "id": "frameworks-databases",
+      "description": "Master web frameworks and database technologies for full-stack development"
+    },
+    {
+      "name": "mobile-games",
+      "id": "mobile-games",
+      "description": "Build mobile apps and games with modern frameworks and engines"
+    },
+    {
+      "name": "cloud-devops",
+      "id": "cloud-devops",
+      "description": "Master cloud platforms, containerization, and infrastructure automation"
+    },
+    {
+      "name": "data-ai",
+      "id": "data-ai",
+      "description": "Master data science, machine learning, and AI engineering"
+    },
+    {
+      "name": "specialization",
+      "id": "specialization",
+      "description": "Advanced specializations: Architecture, Security, Blockchain, Leadership"
+    }
+  ],
+  "pricing": "free",
+  "features": [
+    "71 Developer Career Paths",
+    "7 Specialized Agents",
+    "7 Comprehensive Skills",
+    "100+ Hands-On Projects",
+    "Skill Assessment Tools",
+    "Personalized Learning Paths",
+    "Real-World Examples",
+    "Best Practices Guides",
+    "Career Progression Maps",
+    "Interview Preparation"
+  ],
+  "compatibility": {
+    "claude": "3.5+",
+    "platforms": ["web", "desktop"]
+  },
+  "statistics": {
+    "roles": 71,
+    "agents": 7,
+    "skills": 7,
+    "projects": 100,
+    "learning_hours": 1000,
+    "code_examples": 500,
+    "use_cases": 200
+  }
+}

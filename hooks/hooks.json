@@ -1,0 +1,99 @@
+{
+  "hooks": [
+    {
+      "name": "learning-progress-tracker",
+      "description": "Tracks user's learning progress across agents and roles",
+      "events": ["command-executed", "agent-invoked"],
+      "enabled": true,
+      "config": {
+        "track_completions": true,
+        "store_progress": true,
+        "notify_milestones": true
+      }
+    },
+    {
+      "name": "skill-recommendation-engine",
+      "description": "Recommends skills based on selected role and assessment",
+      "events": ["role-selected", "assessment-completed"],
+      "enabled": true,
+      "config": {
+        "personalize": true,
+        "suggest_projects": true,
+        "difficulty_progression": true
+      }
+    },
+    {
+      "name": "project-validator",
+      "description": "Validates project completion and provides feedback",
+      "events": ["project-started", "project-submitted"],
+      "enabled": true,
+      "config": {
+        "validate_requirements": true,
+        "provide_feedback": true,
+        "suggest_improvements": true
+      }
+    },
+    {
+      "name": "agent-selector",
+      "description": "Intelligently routes users to appropriate agents",
+      "events": ["query-received"],
+      "enabled": true,
+      "config": {
+        "context_awareness": true,
+        "auto_routing": true,
+        "multi_agent_support": true
+      }
+    },
+    {
+      "name": "assessment-processor",
+      "description": "Processes assessment results and creates learning plans",
+      "events": ["assessment-submitted"],
+      "enabled": true,
+      "config": {
+        "score_calculation": true,
+        "gap_analysis": true,
+        "recommendation_generation": true
+      }
+    },
+    {
+      "name": "content-curator",
+      "description": "Curates and suggests relevant content based on progress",
+      "events": ["learning-milestone-reached", "user-query"],
+      "enabled": true,
+      "config": {
+        "filter_by_level": true,
+        "personalize_content": true,
+        "suggest_next_steps": true
+      }
+    },
+    {
+      "name": "community-connector",
+      "description": "Connects learners with community resources and peers",
+      "events": ["learning-completed", "help-requested"],
+      "enabled": true,
+      "config": {
+        "suggest_communities": true,
+        "provide_resources": true,
+        "enable_networking": true
+      }
+    }
+  ],
+  "security": {
+    "validate_input": true,
+    "sanitize_output": true,
+    "rate_limit": {
+      "enabled": true,
+      "requests_per_minute": 60
+    }
+  },
+  "logging": {
+    "level": "info",
+    "track_events": true,
+    "store_history": true
+  },
+  "performance": {
+    "cache_enabled": true,
+    "cache_ttl_seconds": 3600,
+    "async_processing": true
+  }
+}
