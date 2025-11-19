@@ -1,0 +1,122 @@
+{
+  "name": "Custom Plugin CSS",
+  "version": "1.0.0",
+  "id": "custom-plugin-css",
+  "description": "Comprehensive CSS mastery plugin with 5 specialized agents, 5 skills, 50+ projects, and interactive learning tools. Master CSS from fundamentals to advanced techniques.",
+  "author": {
+    "name": "CSS Plugin Team",
+    "url": "https://github.com/pluginagentmarketplace"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pluginagentmarketplace/custom-plugin-css.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "styling",
+    "web-development",
+    "frontend",
+    "design",
+    "responsive",
+    "learning",
+    "education"
+  ],
+  "agents": [
+    {
+      "name": "CSS Fundamentals",
+      "id": "01-css-fundamentals",
+      "description": "Master CSS selectors, box model, typography, colors, and positioning. Build strong CSS foundations."
+    },
+    {
+      "name": "CSS Layouts & Responsive Design",
+      "id": "02-css-layouts",
+      "description": "Master Flexbox and CSS Grid for modern responsive layouts. Create flexible page structures."
+    },
+    {
+      "name": "CSS Frameworks & Preprocessors",
+      "id": "03-css-frameworks",
+      "description": "Master Tailwind CSS, Bootstrap, SASS, and CSS frameworks. Accelerate development."
+    },
+    {
+      "name": "CSS-in-JS & Modern CSS",
+      "id": "04-css-in-js",
+      "description": "Master CSS-in-JS solutions like styled-components and Emotion. Modern component styling."
+    },
+    {
+      "name": "Advanced CSS Techniques",
+      "id": "05-css-advanced",
+      "description": "Master animations, transforms, performance, accessibility, and cutting-edge CSS features."
+    }
+  ],
+  "commands": [
+    {
+      "name": "learn-css",
+      "description": "Start CSS learning path with personalized lessons by topic"
+    },
+    {
+      "name": "css-playground",
+      "description": "Explore interactive CSS examples and code snippets"
+    },
+    {
+      "name": "css-inspector",
+      "description": "Analyze, debug, and optimize your CSS code"
+    },
+    {
+      "name": "css-projects",
+      "description": "Discover 50+ hands-on CSS projects for all skill levels"
+    }
+  ],
+  "skills": [
+    {
+      "name": "css-fundamentals",
+      "id": "fundamentals",
+      "description": "CSS selectors, box model, typography, colors, and positioning fundamentals"
+    },
+    {
+      "name": "css-layouts",
+      "id": "layouts",
+      "description": "Flexbox and CSS Grid for modern responsive layouts"
+    },
+    {
+      "name": "css-frameworks",
+      "id": "frameworks",
+      "description": "Tailwind CSS, Bootstrap, SASS, and CSS preprocessing"
+    },
+    {
+      "name": "css-in-js",
+      "id": "css-in-js",
+      "description": "styled-components, Emotion, CSS Modules, and modern CSS-in-JS patterns"
+    },
+    {
+      "name": "css-advanced",
+      "id": "advanced",
+      "description": "Animations, transforms, performance optimization, and advanced CSS techniques"
+    }
+  ],
+  "pricing": "free",
+  "features": [
+    "5 Specialized CSS Agents",
+    "5 Comprehensive Skills",
+    "4 Interactive Commands",
+    "50+ Hands-On Projects",
+    "100+ Code Examples",
+    "Best Practices & Patterns",
+    "Performance Optimization",
+    "Accessibility Guidelines",
+    "Responsive Design",
+    "Animation Techniques"
+  ],
+  "compatibility": {
+    "claude": "3.5+",
+    "platforms": ["web", "desktop"]
+  },
+  "statistics": {
+    "agents": 5,
+    "skills": 5,
+    "commands": 4,
+    "projects": 50,
+    "code_examples": 100,
+    "learning_hours": 250
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "hooks": [
+    {
+      "name": "css-learning-tracker",
+      "description": "Tracks user's CSS learning progress across topics",
+      "events": ["command-executed", "topic-completed"],
+      "enabled": true,
+      "config": {
+        "track_progress": true,
+        "milestone_notifications": true,
+        "progress_persistence": true
+      }
+    },
+    {
+      "name": "skill-recommendation-engine",
+      "description": "Recommends CSS skills based on current level and goals",
+      "events": ["topic-selected", "assessment-completed"],
+      "enabled": true,
+      "config": {
+        "personalize": true,
+        "suggest_projects": true,
+        "difficulty_progression": true
+      }
+    },
+    {
+      "name": "css-code-analyzer",
+      "description": "Analyzes and provides feedback on CSS code",
+      "events": ["code-submitted", "inspector-invoked"],
+      "enabled": true,
+      "config": {
+        "check_performance": true,
+        "check_accessibility": true,
+        "suggest_improvements": true
+      }
+    },
+    {
+      "name": "project-validator",
+      "description": "Validates CSS project completion and provides feedback",
+      "events": ["project-submitted"],
+      "enabled": true,
+      "config": {
+        "validate_requirements": true,
+        "provide_feedback": true,
+        "suggest_enhancements": true
+      }
+    },
+    {
+      "name": "content-curator",
+      "description": "Curates relevant CSS content based on user progress",
+      "events": ["learning-milestone-reached"],
+      "enabled": true,
+      "config": {
+        "personalize_content": true,
+        "suggest_next_steps": true,
+        "difficulty_matching": true
+      }
+    }
+  ],
+  "security": {
+    "validate_input": true,
+    "sanitize_output": true,
+    "rate_limit": {
+      "enabled": true,
+      "requests_per_minute": 60
+    }
+  },
+  "logging": {
+    "level": "info",
+    "track_events": true,
+    "store_history": true
+  },
+  "performance": {
+    "cache_enabled": true,
+    "cache_ttl_seconds": 3600,
+    "async_processing": true
+  }
+}
