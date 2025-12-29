@@ -1,3 +1,9 @@
+---
+name: learn-css
+description: css - CSS Learning Path
+allowed-tools: Read
+---
+
 # /learn-css - CSS Learning Path
 
 Start your CSS mastery journey with personalized learning paths for every skill level.

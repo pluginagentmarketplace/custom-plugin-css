@@ -1,3 +1,9 @@
+---
+name: css-projects
+description: projects - CSS Project Ideas & Build Guides
+allowed-tools: Read
+---
+
 # /css-projects - CSS Project Ideas & Build Guides
 
 Discover 50+ hands-on CSS projects to build your portfolio and practice skills.

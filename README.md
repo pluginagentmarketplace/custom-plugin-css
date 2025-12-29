@@ -1,22 +1,56 @@
 # 🎨 Custom Plugin CSS
 
+[![Version](https://img.shields.io/badge/Version-1.0.0-blue?style=flat-square)](https://github.com/pluginagentmarketplace/custom-plugin-css)
+[![Status](https://img.shields.io/badge/Status-Development-brightgreen?style=flat-square)](https://github.com/pluginagentmarketplace/custom-plugin-css)
+[![Agents](https://img.shields.io/badge/Agents-0-orange?style=flat-square)](#agents-overview)
+[![Skills](https://img.shields.io/badge/Skills-5-purple?style=flat-square)](#skills-reference)
+[![License](https://img.shields.io/badge/License-Custom-yellow?style=flat-square)](LICENSE)
+[![SASMP](https://img.shields.io/badge/SASMP-v1.3.0-green.svg)](docs/SASMP.md)
+
+[Quick Start](#quick-start) | [Agents](#agents-overview) | [Skills](#skills-reference) | [Commands](#commands)
+
 The ultimate CSS mastery plugin for Claude Code. Master CSS from fundamentals to advanced techniques with **5 specialized agents**, **5 comprehensive skills**, **4 interactive commands**, and **50+ hands-on projects**.
+
+---
+
+---
 
 ## 🚀 Quick Start
 
-### Install (Single Command)
+### Option 1: Install from GitHub (Recommended)
+
 ```bash
-claude add custom-plugin-css
+# Step 1: Add the marketplace from GitHub
+/plugin add marketplace pluginagentmarketplace/custom-plugin-css
+
+# Step 2: Install the plugin
+/plugin install css-assistant@pluginagentmarketplace-css
+
+# Step 3: Restart Claude Code to load new plugins
 ```
 
-### Start Learning
+### Option 2: Clone and Load Locally
+
 ```bash
-/learn-css fundamentals
-/css-playground flexbox-intro beginner
-/css-inspector optimize
-/css-projects beginner
+# Clone the repository
+git clone https://github.com/pluginagentmarketplace/custom-plugin-css.git
+
+# Navigate to the directory in Claude Code
+cd custom-plugin-css
+
+# Load the plugin
+/plugin load .
 ```
 
+After loading, restart Claude Code.
+
+### Verify Installation
+
+After restarting Claude Code, verify the plugin is loaded by checking available agents:
+
+```
+css-assistant:agent-name
+```
 ## ✨ Key Features
 
 ### 🎓 5 Specialized Agents
@@ -331,3 +365,52 @@ Need help? Check:
 **Master CSS. Build beautiful web experiences. Start now! 🎨**
 
 **Version:** 1.0.0 | **Status:** Production Ready ✅ | **License:** MIT
+
+
+---
+
+## Contributing
+
+We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
+
+### Quick Start
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'feat: add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+
+---
+
+<div align="center">
+
+**Style beautiful interfaces with AI!**
+
+[![Made for Css](https://img.shields.io/badge/Made%20for-Css-1572B6?style=for-the-badge&logo=css3)](https://github.com/pluginagentmarketplace/custom-plugin-css)
+
+**Built by Dr. Umit Kacar & Muhsin Elcicek**
+
+</div>
+
+---
+
+## ⚠️ Security Notice
+
+> **Important:** This repository contains third-party code and dependencies.
+> - Always review code before using in production
+> - Check dependencies for known vulnerabilities
+> - Follow security best practices
+> - Report security issues privately
+
+---
+
+## 📅 Metadata
+
+| Field | Value |
+|-------|-------|
+| **Last Updated** | 2025-12-29 |
+| **Maintenance Status** | Active |
+| **SASMP Version** | 1.3.0 |
+| **Support** | [Issues](../../issues) |

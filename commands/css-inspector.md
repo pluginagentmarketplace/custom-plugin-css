@@ -1,3 +1,9 @@
+---
+name: css-inspector
+description: inspector - CSS Analysis & Optimization
+allowed-tools: Read
+---
+
 # /css-inspector - CSS Analysis & Optimization
 
 Analyze, debug, and optimize your CSS with expert guidance.

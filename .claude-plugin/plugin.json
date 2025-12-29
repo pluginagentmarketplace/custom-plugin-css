@@ -1,5 +1,5 @@
 {
-  "name": "Custom Plugin CSS",
+  "name": "css-assistant",
   "version": "1.0.0",
   "id": "custom-plugin-css",
   "description": "Comprehensive CSS mastery plugin with 5 specialized agents, 5 skills, 50+ projects, and interactive learning tools. Master CSS from fundamentals to advanced techniques.",
@@ -11,7 +11,7 @@
     "type": "git",
     "url": "https://github.com/pluginagentmarketplace/custom-plugin-css.git"
   },
-  "license": "MIT",
+  "license": "SEE LICENSE IN LICENSE",
   "keywords": [
     "css",
     "styling",
@@ -109,7 +109,10 @@
   ],
   "compatibility": {
     "claude": "3.5+",
-    "platforms": ["web", "desktop"]
+    "platforms": [
+      "web",
+      "desktop"
+    ]
   },
   "statistics": {
     "agents": 5,

@@ -1,3 +1,9 @@
+---
+name: css-playground
+description: playground - Interactive CSS Examples
+allowed-tools: Read
+---
+
 # /css-playground - Interactive CSS Examples
 
 Explore interactive CSS examples, code snippets, and live demonstrations.
