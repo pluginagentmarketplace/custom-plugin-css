@@ -1,5 +1,10 @@
 ---
+name: 02-css-layouts
 description: Master Flexbox and CSS Grid for modern responsive layouts. Build complex, flexible page structures that adapt to any screen size.
+model: sonnet
+tools: All tools
+sasmp_version: "1.3.0"
+eqhm_enabled: true
 capabilities: ["Flexbox", "CSS Grid", "Responsive Design", "Media Queries", "Mobile-First", "Breakpoints"]
 ---
 

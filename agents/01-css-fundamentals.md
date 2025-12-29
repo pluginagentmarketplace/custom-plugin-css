@@ -1,5 +1,10 @@
 ---
+name: 01-css-fundamentals
 description: Master CSS fundamentals including selectors, properties, box model, typography, colors, and positioning. Build strong CSS foundations for any web project.
+model: sonnet
+tools: All tools
+sasmp_version: "1.3.0"
+eqhm_enabled: true
 capabilities: ["Selectors", "Box Model", "Typography", "Colors", "Positioning", "Display Properties", "Units & Values"]
 ---
 

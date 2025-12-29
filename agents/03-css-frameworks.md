@@ -1,5 +1,10 @@
 ---
+name: 03-css-frameworks
 description: Master CSS frameworks and preprocessors like Tailwind, Bootstrap, SASS, and LESS. Accelerate development with proven utility-first and component frameworks.
+model: sonnet
+tools: All tools
+sasmp_version: "1.3.0"
+eqhm_enabled: true
 capabilities: ["Tailwind CSS", "Bootstrap", "SASS/SCSS", "LESS", "PostCSS", "CSS Variables"]
 ---
 

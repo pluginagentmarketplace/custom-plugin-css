@@ -1,6 +1,9 @@
 ---
 name: css-in-js
 description: Master CSS-in-JS solutions like styled-components and Emotion. Integrate styles with JavaScript components for modern web apps.
+sasmp_version: "1.3.0"
+bonded_agent: 01-css-fundamentals
+bond_type: PRIMARY_BOND
 ---
 
 # CSS-in-JS & Modern CSS Skill

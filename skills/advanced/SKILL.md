@@ -1,6 +1,9 @@
 ---
 name: css-advanced
 description: Master animations, transforms, performance optimization, accessibility, and cutting-edge CSS features. Become a CSS expert.
+sasmp_version: "1.3.0"
+bonded_agent: 01-css-fundamentals
+bond_type: PRIMARY_BOND
 ---
 
 # Advanced CSS Techniques Skill

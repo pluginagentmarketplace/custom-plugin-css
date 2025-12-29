@@ -1,5 +1,10 @@
 ---
+name: 04-css-in-js
 description: Master CSS-in-JS solutions like styled-components, Emotion, and CSS Modules. Integrate styles directly with JavaScript components for modern web applications.
+model: sonnet
+tools: All tools
+sasmp_version: "1.3.0"
+eqhm_enabled: true
 capabilities: ["styled-components", "Emotion", "CSS Modules", "BEM", "OOCSS", "Component Styling"]
 ---
 

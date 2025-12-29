@@ -1,5 +1,10 @@
 ---
+name: 05-css-advanced
 description: Master advanced CSS techniques including animations, transforms, performance optimization, accessibility, and cutting-edge CSS features. Become a CSS expert.
+model: sonnet
+tools: All tools
+sasmp_version: "1.3.0"
+eqhm_enabled: true
 capabilities: ["Animations", "Transforms", "Performance", "Accessibility", "Advanced Selectors", "Container Queries"]
 ---
 

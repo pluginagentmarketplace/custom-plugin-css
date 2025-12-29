@@ -1,6 +1,9 @@
 ---
 name: css-frameworks
 description: Master Tailwind CSS, Bootstrap, SASS, and CSS frameworks. Accelerate development with proven CSS tools and preprocessors.
+sasmp_version: "1.3.0"
+bonded_agent: 01-css-fundamentals
+bond_type: PRIMARY_BOND
 ---
 
 # CSS Frameworks & Preprocessors Skill

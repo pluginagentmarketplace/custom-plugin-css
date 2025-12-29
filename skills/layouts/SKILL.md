@@ -1,6 +1,9 @@
 ---
 name: css-layouts
 description: Master Flexbox and CSS Grid for modern responsive layouts. Create flexible, adaptive designs that work on any screen size.
+sasmp_version: "1.3.0"
+bonded_agent: 01-css-fundamentals
+bond_type: PRIMARY_BOND
 ---
 
 # CSS Layouts Skill

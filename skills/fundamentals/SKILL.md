@@ -1,6 +1,9 @@
 ---
 name: css-fundamentals
 description: Master CSS selectors, box model, typography, colors, and positioning. Build strong CSS foundations with practical examples and best practices.
+sasmp_version: "1.3.0"
+bonded_agent: 01-css-fundamentals
+bond_type: PRIMARY_BOND
 ---
 
 # CSS Fundamentals Skill
