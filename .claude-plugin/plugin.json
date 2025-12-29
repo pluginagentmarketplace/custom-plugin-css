@@ -1,8 +1,8 @@
 {
-  "name": "css-assistant",
+  "name": "css-development-assistant",
   "version": "1.0.0",
   "id": "custom-plugin-css",
-  "description": "Comprehensive CSS mastery plugin with 5 specialized agents, 5 skills, 50+ projects, and interactive learning tools. Master CSS from fundamentals to advanced techniques.",
+  "description": "CSS development plugin with specialized agents for layout, animations, architecture, and modern CSS features",
   "author": {
     "name": "CSS Plugin Team",
     "url": "https://github.com/pluginagentmarketplace"
@@ -15,84 +15,37 @@
   "keywords": [
     "css",
     "styling",
-    "web-development",
-    "frontend",
-    "design",
-    "responsive",
-    "learning",
-    "education"
+    "flexbox",
+    "grid",
+    "sass",
+    "tailwind",
+    "claude-code",
+    "plugin"
   ],
   "agents": [
-    {
-      "name": "CSS Fundamentals",
-      "id": "01-css-fundamentals",
-      "description": "Master CSS selectors, box model, typography, colors, and positioning. Build strong CSS foundations."
-    },
-    {
-      "name": "CSS Layouts & Responsive Design",
-      "id": "02-css-layouts",
-      "description": "Master Flexbox and CSS Grid for modern responsive layouts. Create flexible page structures."
-    },
-    {
-      "name": "CSS Frameworks & Preprocessors",
-      "id": "03-css-frameworks",
-      "description": "Master Tailwind CSS, Bootstrap, SASS, and CSS frameworks. Accelerate development."
-    },
-    {
-      "name": "CSS-in-JS & Modern CSS",
-      "id": "04-css-in-js",
-      "description": "Master CSS-in-JS solutions like styled-components and Emotion. Modern component styling."
-    },
-    {
-      "name": "Advanced CSS Techniques",
-      "id": "05-css-advanced",
-      "description": "Master animations, transforms, performance, accessibility, and cutting-edge CSS features."
-    }
+    "./agents/01-css-fundamentals.md",
+    "./agents/02-css-layout-master.md",
+    "./agents/03-css-animations.md",
+    "./agents/04-css-architecture.md",
+    "./agents/05-css-preprocessors.md",
+    "./agents/06-css-performance.md",
+    "./agents/07-css-modern-features.md"
   ],
   "commands": [
-    {
-      "name": "learn-css",
-      "description": "Start CSS learning path with personalized lessons by topic"
-    },
-    {
-      "name": "css-playground",
-      "description": "Explore interactive CSS examples and code snippets"
-    },
-    {
-      "name": "css-inspector",
-      "description": "Analyze, debug, and optimize your CSS code"
-    },
-    {
-      "name": "css-projects",
-      "description": "Discover 50+ hands-on CSS projects for all skill levels"
-    }
+    "./commands/css-inspector.md",
+    "./commands/css-playground.md",
+    "./commands/css-projects.md",
+    "./commands/learn-css.md"
   ],
   "skills": [
-    {
-      "name": "css-fundamentals",
-      "id": "fundamentals",
-      "description": "CSS selectors, box model, typography, colors, and positioning fundamentals"
-    },
-    {
-      "name": "css-layouts",
-      "id": "layouts",
-      "description": "Flexbox and CSS Grid for modern responsive layouts"
-    },
-    {
-      "name": "css-frameworks",
-      "id": "frameworks",
-      "description": "Tailwind CSS, Bootstrap, SASS, and CSS preprocessing"
-    },
-    {
-      "name": "css-in-js",
-      "id": "css-in-js",
-      "description": "styled-components, Emotion, CSS Modules, and modern CSS-in-JS patterns"
-    },
-    {
-      "name": "css-advanced",
-      "id": "advanced",
-      "description": "Animations, transforms, performance optimization, and advanced CSS techniques"
-    }
+    "./skills/css-animations/SKILL.md",
+    "./skills/css-architecture/SKILL.md",
+    "./skills/css-flexbox-grid/SKILL.md",
+    "./skills/css-fundamentals/SKILL.md",
+    "./skills/css-modern/SKILL.md",
+    "./skills/css-performance/SKILL.md",
+    "./skills/css-sass/SKILL.md",
+    "./skills/css-tailwind/SKILL.md"
   ],
   "pricing": "free",
   "features": [
