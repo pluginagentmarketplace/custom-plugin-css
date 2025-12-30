@@ -1,179 +1,194 @@
 ---
 name: css-inspector
-description: inspector - CSS Analysis & Optimization
-allowed-tools: Read
+description: CSS Analysis & Optimization Command
+allowed-tools: Read, Glob, Grep
+version: "2.0.0"
+updated: "2025-12-30"
 ---
 
 # /css-inspector - CSS Analysis & Optimization
 
-Analyze, debug, and optimize your CSS with expert guidance.
+Analyze, debug, and optimize CSS with actionable insights.
 
-## Usage
+## Synopsis
 
 ```
-/css-inspector [action]
+/css-inspector <action> [options]
 ```
 
 ## Actions
 
-### analyze
-Analyze CSS for:
-- Specificity issues
-- Dead code
-- Redundant selectors
-- Performance problems
-- Accessibility concerns
+| Action | Description | Exit Code |
+|--------|-------------|-----------|
+| `analyze` | Analyze specificity, dead code, performance | 0=clean, 1=issues |
+| `optimize` | Get optimization recommendations | 0=success |
+| `debug` | Debug CSS issues interactively | 0=resolved |
+| `performance` | Audit render performance | 0=good, 1=needs work |
+| `accessibility` | Check a11y compliance | 0=pass, 1=warnings, 2=fail |
+| `best-practices` | Review code quality | 0=good, 1=improvements |
 
+## Input Validation
+
+```yaml
+parameters:
+  action:
+    required: true
+    type: string
+    enum: [analyze, optimize, debug, performance, accessibility, best-practices]
+    error: "Action must be one of: analyze, optimize, debug, performance, accessibility, best-practices"
+
+  file:
+    required: false
+    type: string
+    pattern: "^.*\\.(css|scss|sass|less)$"
+    error: "File must be a CSS, SCSS, Sass, or Less file"
+
+  verbose:
+    required: false
+    type: boolean
+    default: false
 ```
+
+## Exit Codes
+
+| Code | Meaning |
+|------|---------|
+| 0 | Success / No issues found |
+| 1 | Warnings / Minor issues |
+| 2 | Errors / Critical issues |
+| 3 | Invalid input |
+| 4 | File not found |
+
+## Usage Examples
+
+```bash
+# Analyze current project CSS
 /css-inspector analyze
-```
 
-### optimize
-Get optimization suggestions:
-- CSS minification
-- Unused styles
-- Critical CSS extraction
-- Performance metrics
-- Bundle size analysis
+# Optimize specific file
+/css-inspector optimize styles.css
 
-```
-/css-inspector optimize
-```
-
-### debug
-Debug common CSS issues:
-- Selector not working
-- Box model problems
-- Layout issues
-- Z-index stacking
-- Specificity conflicts
-
-```
+# Debug layout issues
 /css-inspector debug
-```
 
-### performance
-Check performance:
-- Rendering speed
-- Animation smoothness
-- Repaints/reflows
-- Will-change usage
-- GPU acceleration
-
-```
-/css-inspector performance
-```
-
-### accessibility
-Verify accessibility:
-- Color contrast
-- Focus management
-- Keyboard navigation
-- Motion preferences
-- WCAG compliance
-
-```
+# Check accessibility
 /css-inspector accessibility
 ```
 
-### best-practices
-Review best practices:
-- Naming conventions
-- Code organization
-- Maintainability
-- Scalability
-- Documentation
+## Action Details
 
+### analyze
+
+```bash
+/css-inspector analyze [file]
 ```
+
+Analyzes CSS for:
+- Specificity issues (over 0,1,0,0 threshold)
+- Dead/unused selectors
+- Redundant declarations
+- Performance anti-patterns
+- Accessibility concerns
+
+**Output:**
+```
+Specificity Report:
+├─ [WARN] .header .nav ul li a → 0,0,4,3 (high)
+├─ [OK] .nav-link → 0,0,1,0
+└─ [WARN] #main .content → 0,1,1,0 (ID used)
+
+Dead Code: 3 unused selectors found
+Performance: 2 layout-triggering animations
+```
+
+### optimize
+
+```bash
+/css-inspector optimize [file]
+```
+
+Recommendations for:
+- Bundle size reduction
+- Critical CSS extraction
+- Selector optimization
+- Unused style removal
+
+### debug
+
+```bash
+/css-inspector debug [issue-type]
+```
+
+Interactive debugging for:
+- `selector` - Why isn't my selector working?
+- `layout` - Box model and positioning issues
+- `stacking` - Z-index and stacking context
+- `responsive` - Media query problems
+
+### performance
+
+```bash
+/css-inspector performance
+```
+
+Audits:
+- Render-blocking CSS
+- Animation performance (compositor-only check)
+- will-change usage
+- Reflow triggers
+
+### accessibility
+
+```bash
+/css-inspector accessibility
+```
+
+Checks:
+- Color contrast (WCAG AA/AAA)
+- Focus visibility
+- Motion preferences
+- Touch targets
+
+### best-practices
+
+```bash
 /css-inspector best-practices
 ```
 
-## Common Issues & Solutions
+Reviews:
+- Naming conventions
+- Code organization
+- Maintainability score
+- Documentation coverage
 
-### Selector Not Working
-✗ `.container .item { }` (overcomplicated)
-✓ `.item { }` (simple selector)
+## Quick Reference
 
-→ Lower specificity, easier to override
+### Common Issues & Fixes
 
-### Box Model Confusion
-✗ `width: 100%; padding: 20px;` (overflow)
-✓ `width: 100%; padding: 20px; box-sizing: border-box;`
+| Issue | Fix |
+|-------|-----|
+| Over-specificity | Use single class selectors |
+| Box model overflow | Add `box-sizing: border-box` |
+| Animation jank | Use transform, not position |
+| Fixed widths | Use `max-width` + percentage |
 
-→ Use box-sizing for predictable layouts
+### Performance Checklist
 
-### Animation Performance
-✗ `animation: move 1s; @keyframes move { left: 0; }`
-✓ `animation: move 1s; @keyframes move { transform: translateX(0); }`
+- [ ] CSS minified in production
+- [ ] Unused styles < 20%
+- [ ] Critical CSS inlined
+- [ ] Animations use transform/opacity
+- [ ] No `!important` in components
 
-→ Use transform for 60fps animations
+## Integration
 
-### Responsive Issues
-✗ `width: 500px;` (fixed width)
-✓ `width: 100%; max-width: 500px;`
+Works with agents:
+- 01-css-fundamentals (selector help)
+- 06-css-performance (optimization)
+- 07-css-modern-features (modern patterns)
 
-→ Flexible widths for different screens
+## Related Commands
 
-## Optimization Techniques
-
-### File Size
-- CSS minification: Save 20-30%
-- Remove unused: Analyze with PurgeCSS
-- Critical CSS: Load above-fold first
-- Code splitting: Load when needed
-
-### Performance
-- Hardware acceleration: Use will-change
-- Reduce repaints: Batch DOM changes
-- Optimize selectors: Avoid deep nesting
-- Use contain: Limit scope
-
-### Maintainability
-- Organize logically: Separate concerns
-- Use preprocessors: SASS/LESS
-- Follow naming: BEM, OOCSS
-- Document code: Comments & guides
-
-## Tools Integration
-
-Recommended tools:
-- **PurgeCSS** - Remove unused styles
-- **CSSNano** - CSS minification
-- **PostCSS** - CSS transformations
-- **Stylelint** - CSS linting
-- **Chrome DevTools** - CSS debugging
-
-## Common Mistakes
-
-1. **Over-specificity** - Leads to override wars
-2. **Nested selectors** - Hard to maintain
-3. **Inline styles** - No reusability
-4. **Magic numbers** - Unexplained values
-5. **Hardcoded widths** - Breaks responsiveness
-6. **Animations on position** - Poor performance
-7. **No mobile-first** - Harder to scale
-
-## Performance Checklist
-
-- [ ] CSS minified
-- [ ] Unused styles removed
-- [ ] Critical CSS extracted
-- [ ] Animations use transform
-- [ ] Colors have contrast
-- [ ] Mobile-first approach
-- [ ] Semantic selectors
-- [ ] Browser support verified
-
-## Quick Wins
-
-1. Add `box-sizing: border-box;`
-2. Remove vendor prefixes (autoprefixer)
-3. Minify CSS (20-40% reduction)
-4. Use CSS variables for consistency
-5. Convert animations to transform
-6. Mobile-first media queries
-7. Optimize images separately
-
----
-
-**Ready to optimize?** Try `/css-inspector [action]`
+- `/css-playground` - Interactive examples
+- `/css-projects` - Practice projects
+- `/learn-css` - Learn concepts

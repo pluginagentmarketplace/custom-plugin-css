@@ -1,227 +1,201 @@
 ---
 name: css-projects
-description: projects - CSS Project Ideas & Build Guides
+description: CSS Project Ideas & Build Guides
 allowed-tools: Read
+version: "2.0.0"
+updated: "2025-12-30"
 ---
 
 # /css-projects - CSS Project Ideas & Build Guides
 
-Discover 50+ hands-on CSS projects to build your portfolio and practice skills.
+Discover 30+ hands-on CSS projects organized by difficulty and category.
 
-## Usage
+## Synopsis
 
 ```
-/css-projects [difficulty]
-/css-projects [category]
+/css-projects <filter> [options]
 ```
 
-## Difficulty Levels
+## Input Validation
 
-### Beginner (20-40 hours each)
-1. **Styled Login Form** - Form styling & validation states
-2. **Personal Portfolio** - Layout with CSS Grid
-3. **Color Palette Showcase** - Color theory practice
-4. **Navigation Menu** - Flexbox navigation patterns
-5. **Responsive Image Gallery** - Grid & media queries
-6. **Card Component** - Reusable card design
-7. **Hero Section** - Large banner with text overlay
-8. **Pricing Table** - Data table styling
-9. **Footer Component** - Multi-column footer
-10. **Feature Cards** - 3-column card layout
+```yaml
+parameters:
+  filter:
+    required: true
+    type: string
+    enum: [beginner, intermediate, advanced, layouts, components, animations, responsive, frameworks]
+    error: "Filter must be a valid difficulty or category"
 
-### Intermediate (40-80 hours each)
-1. **Animated Landing Page** - Multiple sections with scroll effects
-2. **Dark Mode Toggle** - CSS variables & theme switching
-3. **Responsive Dashboard** - Complex grid layout
-4. **Modal Dialog System** - Overlay & animations
-5. **Dropdown Menu** - Advanced navigation
-6. **Tabs Component** - Content switching
-7. **Progress Bar** - Visual progress indication
-8. **Loading Animations** - Various loader styles
-9. **Tooltip System** - Interactive tooltips
-10. **Notification System** - Toast notifications
+  show:
+    required: false
+    type: string
+    enum: [list, detail, requirements]
+    default: list
+```
 
-### Advanced (80-150 hours each)
-1. **Interactive Design System** - Complete component library
-2. **Animated Data Visualization** - Charts with CSS
-3. **3D CSS Transforms** - Perspective & 3D effects
-4. **Parallax Scrolling** - Depth & motion effects
-5. **Responsive E-commerce** - Full product page
-6. **Interactive Animations** - Complex motion patterns
-7. **CSS Art Projects** - Pure CSS illustrations
-8. **Performance-Optimized Site** - Critical CSS & optimization
-9. **Accessibility-First Design** - WCAG compliant site
-10. **Custom Design System** - Full theming system
+## Exit Codes
 
-## By Category
+| Code | Meaning |
+|------|---------|
+| 0 | Projects listed successfully |
+| 1 | Invalid filter |
+| 2 | No projects match criteria |
+
+## Usage Examples
+
+```bash
+# List beginner projects
+/css-projects beginner
+
+# Show intermediate project details
+/css-projects intermediate detail
+
+# Browse layout projects
+/css-projects layouts
+
+# Get project requirements
+/css-projects advanced requirements
+```
+
+## Projects by Difficulty
+
+### Beginner (10 Projects)
+
+| # | Project | Skills | Est. Time |
+|---|---------|--------|-----------|
+| 1 | Styled Login Form | Forms, validation states | 4-8h |
+| 2 | Personal Portfolio | Grid, typography | 8-16h |
+| 3 | Color Palette Tool | Colors, variables | 4-6h |
+| 4 | Navigation Menu | Flexbox, hover states | 4-8h |
+| 5 | Image Gallery | Grid, media queries | 6-10h |
+| 6 | Card Component | Box model, shadows | 2-4h |
+| 7 | Hero Section | Positioning, overlays | 4-8h |
+| 8 | Pricing Table | Table styling, grid | 6-10h |
+| 9 | Footer Component | Multi-column, links | 4-6h |
+| 10 | Feature Cards | 3-column layout | 4-8h |
+
+### Intermediate (10 Projects)
+
+| # | Project | Skills | Est. Time |
+|---|---------|--------|-----------|
+| 1 | Animated Landing | Scroll effects, sections | 16-24h |
+| 2 | Dark Mode Toggle | CSS variables, theming | 8-12h |
+| 3 | Dashboard Layout | Complex grid, sidebar | 16-24h |
+| 4 | Modal System | Overlays, animations | 8-12h |
+| 5 | Dropdown Menu | Nested navigation | 8-12h |
+| 6 | Tabs Component | State switching | 6-10h |
+| 7 | Progress Indicators | Bars, circles, steps | 6-10h |
+| 8 | Loading Animations | Keyframes, spinners | 6-10h |
+| 9 | Tooltip System | Positioning, arrows | 8-12h |
+| 10 | Toast Notifications | Animations, stacking | 8-12h |
+
+### Advanced (10 Projects)
+
+| # | Project | Skills | Est. Time |
+|---|---------|--------|-----------|
+| 1 | Design System | Complete component lib | 40-60h |
+| 2 | Data Visualization | Charts with CSS | 24-40h |
+| 3 | 3D Card Effects | Perspective, transforms | 16-24h |
+| 4 | Parallax Page | Scroll, depth layers | 16-24h |
+| 5 | E-commerce Product | Full product page | 24-40h |
+| 6 | Motion System | Complex animations | 24-40h |
+| 7 | CSS Art | Pure CSS illustration | 16-40h |
+| 8 | Performance Site | Critical CSS, optimization | 24-40h |
+| 9 | A11y-First Design | WCAG compliant | 24-40h |
+| 10 | Theme System | Multi-theme architecture | 32-48h |
+
+## Projects by Category
 
 ### Layouts
-- Portfolio grid
-- Magazine layout
-- Dashboard layout
-- Sidebar navigation
-- Multi-column layouts
+- Portfolio grid, magazine, dashboard, sidebar, holy grail
 
 ### Components
-- Buttons (all states)
-- Form inputs
-- Cards & containers
-- Navigation bars
-- Modals & overlays
+- Buttons, forms, cards, navbars, modals, tooltips
 
 ### Animations
-- Page transitions
-- Scroll animations
-- Hover effects
-- Loading states
-- Micro-interactions
+- Page transitions, scroll effects, hover states, loaders
 
 ### Responsive
-- Mobile menu
-- Responsive tables
-- Adaptive images
-- Flexible typography
-- Breakpoint strategies
+- Mobile menus, responsive tables, fluid typography
 
 ### Frameworks
-- Bootstrap website
-- Tailwind design
-- SASS architecture
-- CSS Modules structure
-- Design system
+- Tailwind site, Bootstrap components, Sass architecture
 
-## Featured Projects
-
-### Most Popular
-1. **Personal Portfolio** - Perfect first project
-2. **Responsive Landing Page** - Interview ready
-3. **Component Library** - Portfolio impressive
-4. **Dark Mode Site** - Modern practice
-5. **Animated Dashboard** - Impressive effects
-
-### Trending
-1. **Container Query Layout** - Cutting edge
-2. **CSS Grid Design System** - Modern approach
-3. **Accessible Navigation** - Best practices
-4. **Performance-Optimized** - Pro skills
-5. **Responsive E-commerce** - Real-world
-
-## Project Requirements
+## Project Structure
 
 Each project includes:
-- Project description
-- Starting template
-- Feature checklist
-- Difficulty breakdown
-- Time estimate
-- Bonus features
-- Deployment guide
-- Code review checklist
+
+```
+project/
+├─ README.md          # Requirements & guide
+├─ requirements.md    # Detailed specs
+├─ starter/           # HTML template
+│   └─ index.html
+├─ solution/          # Reference implementation
+│   ├─ index.html
+│   └─ styles.css
+└─ checklist.md       # Completion criteria
+```
 
 ## Learning Outcomes
 
-### Beginner Projects Learn
-✓ CSS fundamentals
-✓ Layout techniques
-✓ Responsive design
-✓ Component structure
-✓ Code organization
+### Beginner
+- CSS fundamentals
+- Basic layouts
+- Responsive basics
+- Component structure
 
-### Intermediate Projects Learn
-✓ Advanced layouts
-✓ Animations & effects
-✓ Component systems
-✓ State management (CSS)
-✓ Accessibility
+### Intermediate
+- Advanced layouts
+- Animation techniques
+- State management
+- Accessibility basics
 
-### Advanced Projects Learn
-✓ Performance optimization
-✓ 3D transforms
-✓ Complex animations
-✓ Design systems
-✓ Maintainability at scale
+### Advanced
+- Performance optimization
+- Complex animations
+- Design systems
+- Production patterns
 
-## Getting Started
-
-1. **Choose Project** - Match your level
-2. **Read Requirements** - Understand scope
-3. **Create HTML** - Semantic structure
-4. **Write CSS** - Follow best practices
-5. **Optimize** - Performance & accessibility
-6. **Deploy** - GitHub Pages or similar
-7. **Share** - Build your portfolio
-
-## Project Timeline
-
-### Week 1-2: Beginner
-- Simple forms, layouts, cards
-- Get comfortable with CSS
-
-### Week 3-6: Intermediate
-- Complex components, animations
-- Real-world patterns
-
-### Week 7+: Advanced
-- Design systems, optimization
-- Production-quality code
-
-## Tips
-
-✓ Start small, build progressively
-✓ Deploy everything publicly
-✓ Document your process
-✓ Iterate & improve
-✓ Add personal touches
-✓ Share with community
-✓ Get feedback
-✓ Refactor & optimize
-
-## Portfolio Tips
-
-- Deploy on GitHub Pages (free)
-- Write good README files
-- Include before/after images
-- Explain your approach
-- Share learnings
-- Link to live demos
-- Show responsive design
-- Include code snippets
-
-## Progression Path
+## Project Workflow
 
 ```
-Beginner Project
-      ↓
-Master fundamentals
-      ↓
-Intermediate Project
-      ↓
-Learn advanced techniques
-      ↓
-Advanced Project
-      ↓
-Design System
-      ↓
-Expert Portfolio
+1. Choose Project
+   └─ Match your current level
+       ↓
+2. Read Requirements
+   └─ Understand scope & goals
+       ↓
+3. Build HTML First
+   └─ Semantic structure
+       ↓
+4. Apply CSS
+   └─ Mobile-first approach
+       ↓
+5. Optimize
+   └─ Performance & a11y
+       ↓
+6. Deploy
+   └─ GitHub Pages
+       ↓
+7. Document
+   └─ README & screenshots
 ```
 
-## Examples
+## Recommended Path
 
-```bash
-/css-projects beginner
 ```
-→ All beginner projects
-
-```bash
-/css-projects intermediate
+Week 1-2: Beginner Projects (3-4)
+    ↓
+Week 3-4: Intermediate Projects (2-3)
+    ↓
+Week 5-6: Advanced Projects (1-2)
+    ↓
+Week 7+: Design System Project
 ```
-→ Intermediate challenges
 
-```bash
-/css-projects advanced
-```
-→ Expert-level projects
+## Related Commands
 
----
-
-**Ready to build?** Choose a project: `/css-projects [difficulty]`
+- `/css-playground` - Practice concepts
+- `/css-inspector` - Debug projects
+- `/learn-css` - Learn fundamentals
