@@ -1,188 +1,227 @@
 ---
 name: learn-css
-description: css - CSS Learning Path
+description: CSS Learning Path Command
 allowed-tools: Read
+version: "2.0.0"
+updated: "2025-12-30"
 ---
 
 # /learn-css - CSS Learning Path
 
-Start your CSS mastery journey with personalized learning paths for every skill level.
+Structured CSS learning paths from beginner to expert.
 
-## Usage
+## Synopsis
 
 ```
-/learn-css [topic]
+/learn-css <topic> [options]
 ```
 
-## CSS Topics
+## Input Validation
+
+```yaml
+parameters:
+  topic:
+    required: true
+    type: string
+    enum: [fundamentals, colors, positioning, layouts, responsive, accessibility, animations, transforms, frameworks, css-in-js, performance, design-systems, cutting-edge]
+    error: "Topic must be a valid CSS learning topic"
+
+  depth:
+    required: false
+    type: string
+    default: standard
+    enum: [quick, standard, deep]
+    description: "Level of detail"
+```
+
+## Exit Codes
+
+| Code | Meaning |
+|------|---------|
+| 0 | Topic loaded successfully |
+| 1 | Invalid topic |
+| 2 | Prerequisites not met |
+
+## Topics Reference
 
 ### Beginner Topics
-- `fundamentals` - Selectors, box model, typography
-- `colors` - Color theory and CSS color properties
-- `positioning` - Static, relative, absolute, fixed, sticky
+
+| Topic | Description | Prerequisites | Est. Time |
+|-------|-------------|---------------|-----------|
+| `fundamentals` | Selectors, box model, typography | HTML | 20-40h |
+| `colors` | Color theory, CSS colors, palettes | None | 8-12h |
+| `positioning` | Position properties, z-index | fundamentals | 12-20h |
 
 ### Intermediate Topics
-- `layouts` - Flexbox and CSS Grid
-- `responsive` - Mobile-first responsive design
-- `accessibility` - WCAG, contrast, keyboard navigation
+
+| Topic | Description | Prerequisites | Est. Time |
+|-------|-------------|---------------|-----------|
+| `layouts` | Flexbox & CSS Grid mastery | fundamentals | 30-50h |
+| `responsive` | Mobile-first, media queries | layouts | 20-30h |
+| `accessibility` | WCAG, contrast, focus | fundamentals | 16-24h |
 
 ### Advanced Topics
-- `animations` - Keyframes, transitions, timing functions
-- `transforms` - 2D & 3D transforms
-- `frameworks` - Tailwind, Bootstrap, SASS
-- `css-in-js` - styled-components, Emotion, CSS Modules
 
-### Specialization Topics
-- `performance` - Optimization, critical CSS
-- `design-systems` - CSS architecture, tokens
-- `cutting-edge` - Container queries, cascade layers
+| Topic | Description | Prerequisites | Est. Time |
+|-------|-------------|---------------|-----------|
+| `animations` | Keyframes, timing, performance | fundamentals | 25-40h |
+| `transforms` | 2D/3D transforms, perspective | fundamentals | 16-24h |
+| `frameworks` | Tailwind, Bootstrap, Sass | layouts | 35-55h |
+| `css-in-js` | styled-components, Emotion | frameworks | 24-40h |
+
+### Expert Topics
+
+| Topic | Description | Prerequisites | Est. Time |
+|-------|-------------|---------------|-----------|
+| `performance` | Critical CSS, optimization | All basics | 20-30h |
+| `design-systems` | Tokens, architecture, theming | frameworks | 40-60h |
+| `cutting-edge` | Container queries, @layer, :has() | layouts | 16-24h |
+
+## Usage Examples
+
+```bash
+# Start with fundamentals
+/learn-css fundamentals
+
+# Quick overview of layouts
+/learn-css layouts quick
+
+# Deep dive into animations
+/learn-css animations deep
+
+# Learn modern CSS features
+/learn-css cutting-edge
+```
 
 ## Learning Paths
 
-### Path 1: Complete Beginner (0 → Advanced)
-1. `/learn-css fundamentals` - 20-40 hours
-2. `/learn-css layouts` - 30-50 hours
-3. `/learn-css responsive` - 20-30 hours
-4. `/learn-css animations` - 25-40 hours
-5. `/learn-css frameworks` - 35-55 hours
-6. **Total: 130-215 hours**
+### Path 1: Complete Beginner → Expert
 
-### Path 2: Practical Developer (Intermediate → Expert)
-1. `/learn-css layouts` - Start here
-2. `/learn-css frameworks` - Accelerate
-3. `/learn-css css-in-js` - Modern approach
-4. `/learn-css performance` - Optimize
-5. **Total: 100-180 hours**
+```
+fundamentals (20-40h)
+    ↓
+colors (8-12h)
+    ↓
+positioning (12-20h)
+    ↓
+layouts (30-50h)
+    ↓
+responsive (20-30h)
+    ↓
+animations (25-40h)
+    ↓
+frameworks (35-55h)
+    ↓
+performance (20-30h)
 
-### Path 3: Expert Focus (Advanced Topics)
-1. `/learn-css animations` - Advanced effects
-2. `/learn-css transforms` - 3D techniques
-3. `/learn-css performance` - Pro optimization
-4. `/learn-css design-systems` - Architecture
-5. **Total: 80-150 hours**
-
-## Quick Start
-
-```bash
-# Beginner starting point
-/learn-css fundamentals
-
-# Intermediate (already know HTML/CSS)
-/learn-css layouts
-
-# Want modern frameworks
-/learn-css frameworks
-
-# Need animations
-/learn-css animations
+Total: 170-277 hours
 ```
 
-## What You'll Learn
+### Path 2: Developer Fast Track
 
-### Fundamentals
-✓ CSS selectors & specificity
-✓ Box model & margins
-✓ Typography & colors
-✓ Positioning techniques
-
-### Layouts
-✓ Flexbox mastery
-✓ CSS Grid layout
-✓ Responsive design
-✓ Mobile-first approach
-
-### Frameworks
-✓ Tailwind CSS utility-first
-✓ Bootstrap components
-✓ SASS/SCSS preprocessing
-✓ CSS architecture
-
-### CSS-in-JS
-✓ styled-components
-✓ Emotion styling
-✓ CSS Modules scoping
-✓ Component encapsulation
-
-### Advanced
-✓ Keyframe animations
-✓ 2D/3D transforms
-✓ Performance optimization
-✓ Web accessibility
-
-## Skill Levels
-
-- **Beginner**: No prior CSS experience
-- **Intermediate**: Know HTML/CSS basics, want to deepen
-- **Advanced**: Experienced, want expert techniques
-- **Expert**: Master complex patterns & optimization
-
-## Resources Included
-
-Each learning path includes:
-- Core concepts explanation
-- Code examples
-- Best practices
-- Common mistakes
-- Projects to build
-- Performance tips
-
-## Progression
-
-Start → Fundamentals → Layouts → Frameworks → Advanced → Expert
-
-Each topic builds on previous knowledge. Don't skip foundations!
-
-## Projects by Level
-
-### Beginner Projects
-- Basic portfolio page
-- Styled form
-- Simple navigation
-
-### Intermediate Projects
-- Responsive landing page
-- Multi-column layout
-- Component library
-
-### Advanced Projects
-- Animated dashboard
-- Interactive UI
-- Design system
-
-## Examples
-
-```bash
-/learn-css fundamentals
 ```
-→ Start with CSS basics
+layouts (30-50h)
+    ↓
+responsive (20-30h)
+    ↓
+frameworks (35-55h)
+    ↓
+performance (20-30h)
 
-```bash
-/learn-css layouts
+Total: 105-165 hours
 ```
-→ Master Flexbox & Grid
 
-```bash
-/learn-css frameworks
+### Path 3: Design Focus
+
 ```
-→ Learn Tailwind/Bootstrap
+fundamentals (20-40h)
+    ↓
+colors (8-12h)
+    ↓
+animations (25-40h)
+    ↓
+design-systems (40-60h)
 
-```bash
-/learn-css animations
+Total: 93-152 hours
 ```
-→ Advanced animations
 
-## Time Estimates
+## Topic Content
 
-- **Quick skill**: 20-40 hours
-- **Solid foundation**: 80-120 hours
-- **Expert level**: 200-300 hours
+Each topic includes:
 
-## Next Steps
+```
+Topic Package:
+├─ Core Concepts
+│   └─ Theory & principles
+├─ Code Examples
+│   └─ Practical snippets
+├─ Best Practices
+│   └─ Industry standards
+├─ Common Mistakes
+│   └─ What to avoid
+├─ Practice Projects
+│   └─ Hands-on exercises
+├─ Debug Guide
+│   └─ Troubleshooting
+└─ Resources
+    └─ Further reading
+```
 
-1. Choose your starting level
-2. Work through the topic
-3. Build projects
-4. Practice daily
-5. Share your work
+## Depth Options
 
-**Ready to master CSS?** Start with `/learn-css [topic]`!
+### Quick (30-50% time)
+- Core concepts only
+- Essential examples
+- Key takeaways
+
+### Standard (default)
+- Complete coverage
+- Multiple examples
+- Practice exercises
+
+### Deep (150-200% time)
+- Advanced concepts
+- Edge cases
+- Performance considerations
+- Architecture patterns
+
+## Progress Tracking
+
+```yaml
+Recommended Study Pattern:
+  - daily_time: 1-2 hours
+  - weekly_project: 1 small project
+  - monthly_review: Revisit earlier topics
+  - practice_ratio: 60% hands-on, 40% theory
+```
+
+## Skill Verification
+
+After each topic:
+- [ ] Can explain core concepts
+- [ ] Built practice project
+- [ ] Reviewed common mistakes
+- [ ] Applied best practices
+- [ ] Debugged issues independently
+
+## Topic Dependencies
+
+```
+fundamentals ─┬─→ positioning
+              ├─→ colors
+              ├─→ layouts ─┬─→ responsive
+              │            ├─→ frameworks ─→ css-in-js
+              │            └─→ cutting-edge
+              ├─→ animations
+              ├─→ transforms
+              └─→ accessibility
+
+All topics ─→ performance
+           ─→ design-systems
+```
+
+## Related Commands
+
+- `/css-playground` - Practice interactively
+- `/css-projects` - Build projects
+- `/css-inspector` - Debug & optimize

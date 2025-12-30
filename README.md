@@ -1,15 +1,15 @@
 # 🎨 Custom Plugin CSS
 
-[![Version](https://img.shields.io/badge/Version-1.0.0-blue?style=flat-square)](https://github.com/pluginagentmarketplace/custom-plugin-css)
-[![Status](https://img.shields.io/badge/Status-Development-brightgreen?style=flat-square)](https://github.com/pluginagentmarketplace/custom-plugin-css)
-[![Agents](https://img.shields.io/badge/Agents-0-orange?style=flat-square)](#agents-overview)
-[![Skills](https://img.shields.io/badge/Skills-5-purple?style=flat-square)](#skills-reference)
+[![Version](https://img.shields.io/badge/Version-2.0.0-blue?style=flat-square)](https://github.com/pluginagentmarketplace/custom-plugin-css)
+[![Status](https://img.shields.io/badge/Status-Production-brightgreen?style=flat-square)](https://github.com/pluginagentmarketplace/custom-plugin-css)
+[![Agents](https://img.shields.io/badge/Agents-7-orange?style=flat-square)](#agents-overview)
+[![Skills](https://img.shields.io/badge/Skills-8-purple?style=flat-square)](#skills-reference)
 [![License](https://img.shields.io/badge/License-Custom-yellow?style=flat-square)](LICENSE)
 [![SASMP](https://img.shields.io/badge/SASMP-v1.3.0-green.svg)](docs/SASMP.md)
 
 [Quick Start](#quick-start) | [Agents](#agents-overview) | [Skills](#skills-reference) | [Commands](#commands)
 
-The ultimate CSS mastery plugin for Claude Code. Master CSS from fundamentals to advanced techniques with **5 specialized agents**, **5 comprehensive skills**, **4 interactive commands**, and **50+ hands-on projects**.
+The ultimate CSS mastery plugin for Claude Code. Master CSS from fundamentals to advanced techniques with **7 specialized agents**, **8 comprehensive skills**, **4 interactive commands**, and **50+ hands-on projects**.
 
 ---
 
@@ -53,17 +53,19 @@ css-assistant:agent-name
 ```
 ## ✨ Key Features
 
-### 🎓 5 Specialized Agents
+### 🎓 7 Specialized Agents
 
 | Agent | Focus | Duration |
 |-------|-------|----------|
-| **#1: Fundamentals** | Selectors, box model, typography, colors, positioning | 20-40h |
-| **#2: Layouts** | Flexbox, CSS Grid, responsive design | 30-50h |
-| **#3: Frameworks** | Tailwind, Bootstrap, SASS, CSS architecture | 35-55h |
-| **#4: CSS-in-JS** | styled-components, Emotion, CSS Modules | 40-60h |
-| **#5: Advanced** | Animations, transforms, performance, accessibility | 50-80h |
+| **#1: CSS Fundamentals** | Selectors, specificity, box model, typography | 20-40h |
+| **#2: Layout Master** | Flexbox, CSS Grid, responsive design | 30-50h |
+| **#3: CSS Animations** | Keyframes, transitions, performance | 25-40h |
+| **#4: CSS Architecture** | BEM, SMACSS, design systems, scalability | 35-55h |
+| **#5: CSS Preprocessors** | Sass, PostCSS, Tailwind, CSS Modules | 40-60h |
+| **#6: CSS Performance** | Critical CSS, code splitting, optimization | 30-50h |
+| **#7: Modern Features** | Custom properties, :has(), @layer, container queries | 25-45h |
 
-### 📚 5 Comprehensive Skills
+### 📚 8 Comprehensive Skills
 
 Each skill includes:
 - 🎯 Quick start guide
@@ -73,11 +75,14 @@ Each skill includes:
 - 🚀 Performance tips
 
 **Skills:**
-1. **css-fundamentals** - Selectors, box model, typography
-2. **css-layouts** - Flexbox & CSS Grid
-3. **css-frameworks** - Tailwind, Bootstrap, SASS
-4. **css-in-js** - styled-components, Emotion
-5. **css-advanced** - Animations, transforms, optimization
+1. **css-fundamentals** - Selectors, specificity, box model
+2. **css-flexbox-grid** - Flexbox & CSS Grid layouts
+3. **css-animations** - Keyframes, transitions, motion
+4. **css-architecture** - BEM, SMACSS, design systems
+5. **css-sass** - Sass/SCSS preprocessing
+6. **css-tailwind** - Utility-first CSS framework
+7. **css-performance** - Critical CSS, optimization
+8. **css-modern** - Custom properties, container queries
 
 ### 🛠️ 4 Interactive Commands
 
@@ -101,23 +106,28 @@ Each skill includes:
 Custom Plugin CSS/
 ├── .claude-plugin/
 │   └── plugin.json ........................ Plugin manifest
-├── agents/ .............................. 5 Agent files
+├── agents/ .............................. 7 Agent files
 │   ├── 01-css-fundamentals.md
-│   ├── 02-css-layouts.md
-│   ├── 03-css-frameworks.md
-│   ├── 04-css-in-js.md
-│   └── 05-css-advanced.md
+│   ├── 02-css-layout-master.md
+│   ├── 03-css-animations.md
+│   ├── 04-css-architecture.md
+│   ├── 05-css-preprocessors.md
+│   ├── 06-css-performance.md
+│   └── 07-css-modern-features.md
 ├── commands/ ........................... 4 Commands
 │   ├── learn-css.md
 │   ├── css-playground.md
 │   ├── css-inspector.md
 │   └── css-projects.md
-├── skills/ ............................. 5 Skills
-│   ├── fundamentals/SKILL.md
-│   ├── layouts/SKILL.md
-│   ├── frameworks/SKILL.md
-│   ├── css-in-js/SKILL.md
-│   └── advanced/SKILL.md
+├── skills/ ............................. 8 Skills
+│   ├── css-fundamentals/SKILL.md
+│   ├── css-flexbox-grid/SKILL.md
+│   ├── css-animations/SKILL.md
+│   ├── css-architecture/SKILL.md
+│   ├── css-sass/SKILL.md
+│   ├── css-tailwind/SKILL.md
+│   ├── css-performance/SKILL.md
+│   └── css-modern/SKILL.md
 ├── hooks/
 │   └── hooks.json ...................... Automation hooks
 └── README.md
@@ -229,8 +239,8 @@ Expert Portfolio (Production-Ready Code)
 
 ## 🌟 Plugin Highlights
 
-✅ **5 Agents** - Specialized expertise
-✅ **5 Skills** - Comprehensive guides with code
+✅ **7 Agents** - Specialized expertise
+✅ **8 Skills** - Comprehensive guides with code
 ✅ **4 Commands** - Interactive learning tools
 ✅ **50+ Projects** - Real portfolio pieces
 ✅ **100+ Examples** - Practical code snippets
@@ -256,7 +266,7 @@ Expert Portfolio (Production-Ready Code)
 - Time: 100-150 hours
 
 ### 💼 Interview Preparation
-- Study: All 5 agents systematically
+- Study: All 7 agents systematically
 - Practice: CSS projects portfolio
 - Time: 150-200 hours
 
@@ -322,8 +332,8 @@ Each topic includes:
 
 ## 📊 Statistics
 
-- **5 Agents** - Specialized expertise
-- **5 Skills** - Comprehensive guides
+- **7 Agents** - Specialized expertise
+- **8 Skills** - Comprehensive guides
 - **4 Commands** - Interactive tools
 - **50+ Projects** - Real practice
 - **100+ Code Examples** - Practical reference
@@ -364,7 +374,7 @@ Need help? Check:
 
 **Master CSS. Build beautiful web experiences. Start now! 🎨**
 
-**Version:** 1.0.0 | **Status:** Production Ready ✅ | **License:** MIT
+**Version:** 2.0.0 | **Status:** Production Ready ✅ | **License:** MIT
 
 
 ---

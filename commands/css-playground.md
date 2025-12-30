@@ -1,147 +1,206 @@
 ---
 name: css-playground
-description: playground - Interactive CSS Examples
+description: Interactive CSS Examples & Practice
 allowed-tools: Read
+version: "2.0.0"
+updated: "2025-12-30"
 ---
 
 # /css-playground - Interactive CSS Examples
 
-Explore interactive CSS examples, code snippets, and live demonstrations.
+Explore CSS with interactive examples, live code, and hands-on practice.
 
-## Usage
+## Synopsis
 
 ```
-/css-playground [category] [difficulty]
+/css-playground <category> [difficulty]
 ```
+
+## Input Validation
+
+```yaml
+parameters:
+  category:
+    required: true
+    type: string
+    enum: [selectors, box-model, flexbox, grid, responsive, colors, typography, animations, transforms, components]
+    error: "Category must be one of the available topics"
+
+  difficulty:
+    required: false
+    type: string
+    default: beginner
+    enum: [beginner, intermediate, advanced, expert]
+    error: "Difficulty must be: beginner, intermediate, advanced, or expert"
+```
+
+## Exit Codes
+
+| Code | Meaning |
+|------|---------|
+| 0 | Playground loaded successfully |
+| 1 | Invalid category |
+| 2 | Invalid difficulty |
+| 3 | Resource not found |
 
 ## Categories
 
-### Selectors & Basics
-- `selectors-basic` - Element, class, ID selectors
-- `selectors-advanced` - Complex selectors, :has(), :is()
-- `box-model` - Margins, padding, borders
+### Fundamentals
+| Category | Description | Levels |
+|----------|-------------|--------|
+| `selectors` | CSS selectors mastery | All |
+| `box-model` | Content, padding, border, margin | Beginner-Intermediate |
+| `colors` | Color systems & palettes | All |
+| `typography` | Font styling & text | All |
 
-### Layouts
-- `flexbox-intro` - Flexbox fundamentals
-- `flexbox-advanced` - Complex flex patterns
-- `grid-intro` - CSS Grid basics
-- `grid-advanced` - Advanced grid techniques
-- `responsive` - Mobile-first patterns
+### Layout
+| Category | Description | Levels |
+|----------|-------------|--------|
+| `flexbox` | Flex container & items | All |
+| `grid` | CSS Grid layouts | All |
+| `responsive` | Mobile-first patterns | Intermediate+ |
 
-### Colors & Typography
-- `colors` - Color systems & palettes
-- `typography` - Font systems
-- `text-effects` - Text shadows & effects
+### Effects
+| Category | Description | Levels |
+|----------|-------------|--------|
+| `animations` | Keyframes & timing | Intermediate+ |
+| `transforms` | 2D & 3D transforms | All |
 
-### Effects & Animations
-- `transitions` - Smooth transitions
-- `animations` - Keyframe animations
-- `transforms` - 2D/3D transforms
-- `filters` - Blur, brightness, contrast
+### Components
+| Category | Description | Levels |
+|----------|-------------|--------|
+| `components` | Buttons, cards, navs | All |
 
-### Practical Components
-- `buttons` - Button variations
-- `cards` - Card layouts
-- `navigation` - Nav patterns
-- `forms` - Form styling
-- `modals` - Modal windows
+## Usage Examples
+
+```bash
+# Basic flexbox examples
+/css-playground flexbox beginner
+
+# Advanced grid techniques
+/css-playground grid advanced
+
+# Animation patterns
+/css-playground animations intermediate
+
+# Component library examples
+/css-playground components
+```
 
 ## Difficulty Levels
 
-- **Beginner** - Basic concepts, simple examples
-- **Intermediate** - Practical patterns, moderate complexity
-- **Advanced** - Complex techniques, pro patterns
-- **Expert** - Edge cases, optimization tricks
+### Beginner
+- Core concepts explained
+- Simple, isolated examples
+- Step-by-step guidance
+- Common patterns only
 
-## Examples
+### Intermediate
+- Real-world patterns
+- Combined techniques
+- Responsive variations
+- Best practices focus
 
-```bash
-/css-playground flexbox-intro beginner
+### Advanced
+- Complex compositions
+- Edge cases covered
+- Performance optimized
+- Browser considerations
+
+### Expert
+- Cutting-edge features
+- Optimization tricks
+- Architecture patterns
+- Production patterns
+
+## What Each Playground Includes
+
 ```
-→ Basic Flexbox examples for beginners
-
-```bash
-/css-playground grid-advanced expert
+Each playground provides:
+├─ Live code editor
+├─ Real-time preview
+├─ Concept explanation
+├─ Property reference
+├─ Common mistakes
+├─ Variations to try
+└─ Related patterns
 ```
-→ Advanced Grid techniques
-
-```bash
-/css-playground responsive intermediate
-```
-→ Responsive design patterns
-
-## What You Get
-
-Each playground includes:
-- Interactive code editor
-- Live preview
-- Explanation of concepts
-- Common use cases
-- Tips & tricks
-- Variation examples
 
 ## Quick Reference
 
 ### Flexbox
+
 ```css
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
+.container {
+  display: flex;
+  justify-content: center;  /* Main axis */
+  align-items: center;      /* Cross axis */
+  gap: 1rem;
+}
 ```
 
 ### Grid
+
 ```css
-display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-gap: 20px;
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
 ```
 
 ### Animations
+
 ```css
-@keyframes slide { 0% { transform: translateX(0); } }
-animation: slide 1s ease;
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.element {
+  animation: fade-in 0.3s ease-out forwards;
+}
 ```
 
 ## Learning Path
 
-1. Start with **Selectors & Basics**
-2. Progress to **Layouts** (Flexbox, Grid)
-3. Learn **Effects & Animations**
-4. Build **Practical Components**
-5. Explore **Advanced Techniques**
+```
+1. selectors beginner
+   └─ Learn CSS selection
+       ↓
+2. box-model beginner
+   └─ Understand spacing
+       ↓
+3. flexbox beginner → intermediate
+   └─ 1D layouts
+       ↓
+4. grid beginner → intermediate
+   └─ 2D layouts
+       ↓
+5. responsive intermediate
+   └─ Mobile-first
+       ↓
+6. animations intermediate → advanced
+   └─ Motion design
+       ↓
+7. components advanced
+   └─ Build real UI
+```
 
-## Practice Tips
+## Featured Playgrounds
 
-✓ Modify the examples
-✓ Try different values
-✓ Combine techniques
-✓ Build variations
-✓ Create your own
+### Most Used
+- `flexbox beginner` - Start here for layouts
+- `grid intermediate` - Responsive grids
+- `animations intermediate` - Smooth transitions
 
-## Featured Examples
+### Modern CSS
+- `grid expert` - Container queries
+- `selectors advanced` - :has() patterns
+- `responsive expert` - Fluid typography
 
-### Most Popular
-- Responsive Grid Layouts
-- Flexbox Card Systems
-- Smooth Animations
-- Interactive Buttons
-- Mobile Navigation
+## Related Commands
 
-### Trending
-- Container Queries
-- CSS Nesting
-- Advanced Selectors
-- Performance Tips
-- Accessibility Patterns
-
-## Submit Your Own
-
-Built something cool? Share your CSS examples!
-- GitHub discussions
-- Community showcase
-- Featured examples
-
----
-
-**Ready to explore?** Try `/css-playground [category] [difficulty]`
+- `/css-inspector` - Debug issues
+- `/css-projects` - Build projects
+- `/learn-css` - Structured learning

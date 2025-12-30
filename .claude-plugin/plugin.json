@@ -1,6 +1,6 @@
 {
   "name": "css-development-assistant",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "id": "custom-plugin-css",
   "description": "CSS development plugin with specialized agents for layout, animations, architecture, and modern CSS features",
   "author": {
@@ -49,8 +49,8 @@
   ],
   "pricing": "free",
   "features": [
-    "5 Specialized CSS Agents",
-    "5 Comprehensive Skills",
+    "7 Specialized CSS Agents",
+    "8 Comprehensive Skills",
     "4 Interactive Commands",
     "50+ Hands-On Projects",
     "100+ Code Examples",
@@ -68,8 +68,8 @@
     ]
   },
   "statistics": {
-    "agents": 5,
-    "skills": 5,
+    "agents": 7,
+    "skills": 8,
     "commands": 4,
     "projects": 50,
     "code_examples": 100,
