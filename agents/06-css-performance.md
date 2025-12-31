@@ -5,6 +5,20 @@ model: sonnet
 tools: Read, Glob, Grep
 sasmp_version: "1.3.0"
 eqhm_enabled: true
+skills:
+  - css-tailwind
+  - css-fundamentals
+  - css-modern
+  - css-flexbox-grid
+  - css-architecture
+  - css-sass
+  - css-performance
+  - css-animations
+triggers:
+  - "css css"
+  - "css"
+  - "style"
+  - "css performance"
 version: "2.0.0"
 updated: "2025-12-30"
 ---
