@@ -1,418 +1,195 @@
-# 🎨 Custom Plugin CSS
-
-[![Version](https://img.shields.io/badge/Version-2.0.0-blue?style=flat-square)](https://github.com/pluginagentmarketplace/custom-plugin-css)
-[![Status](https://img.shields.io/badge/Status-Production-brightgreen?style=flat-square)](https://github.com/pluginagentmarketplace/custom-plugin-css)
-[![Agents](https://img.shields.io/badge/Agents-7-orange?style=flat-square)](#agents-overview)
-[![Skills](https://img.shields.io/badge/Skills-8-purple?style=flat-square)](#skills-reference)
-[![License](https://img.shields.io/badge/License-Custom-yellow?style=flat-square)](LICENSE)
-[![SASMP](https://img.shields.io/badge/SASMP-v1.3.0-green.svg)](docs/SASMP.md)
-
-[Quick Start](#quick-start) | [Agents](#agents-overview) | [Skills](#skills-reference) | [Commands](#commands)
-
-The ultimate CSS mastery plugin for Claude Code. Master CSS from fundamentals to advanced techniques with **7 specialized agents**, **8 comprehensive skills**, **4 interactive commands**, and **50+ hands-on projects**.
-
----
-
----
-
-## 🚀 Quick Start
-
-### Option 1: Install from GitHub (Recommended)
-
-```bash
-# Step 1: Add the marketplace from GitHub
-/plugin add marketplace pluginagentmarketplace/custom-plugin-css
-
-# Step 2: Install the plugin
-/plugin install css-assistant@pluginagentmarketplace-css
-
-# Step 3: Restart Claude Code to load new plugins
-```
-
-### Option 2: Clone and Load Locally
-
-```bash
-# Clone the repository
-git clone https://github.com/pluginagentmarketplace/custom-plugin-css.git
-
-# Navigate to the directory in Claude Code
-cd custom-plugin-css
-
-# Load the plugin
-/plugin load .
-```
-
-After loading, restart Claude Code.
-
-### Verify Installation
-
-After restarting Claude Code, verify the plugin is loaded by checking available agents:
-
-```
-css-assistant:agent-name
-```
-## ✨ Key Features
-
-### 🎓 7 Specialized Agents
-
-| Agent | Focus | Duration |
-|-------|-------|----------|
-| **#1: CSS Fundamentals** | Selectors, specificity, box model, typography | 20-40h |
-| **#2: Layout Master** | Flexbox, CSS Grid, responsive design | 30-50h |
-| **#3: CSS Animations** | Keyframes, transitions, performance | 25-40h |
-| **#4: CSS Architecture** | BEM, SMACSS, design systems, scalability | 35-55h |
-| **#5: CSS Preprocessors** | Sass, PostCSS, Tailwind, CSS Modules | 40-60h |
-| **#6: CSS Performance** | Critical CSS, code splitting, optimization | 30-50h |
-| **#7: Modern Features** | Custom properties, :has(), @layer, container queries | 25-45h |
-
-### 📚 8 Comprehensive Skills
-
-Each skill includes:
-- 🎯 Quick start guide
-- 💻 Real code examples
-- 📖 Best practices
-- 🔧 Tools & resources
-- 🚀 Performance tips
-
-**Skills:**
-1. **css-fundamentals** - Selectors, specificity, box model
-2. **css-flexbox-grid** - Flexbox & CSS Grid layouts
-3. **css-animations** - Keyframes, transitions, motion
-4. **css-architecture** - BEM, SMACSS, design systems
-5. **css-sass** - Sass/SCSS preprocessing
-6. **css-tailwind** - Utility-first CSS framework
-7. **css-performance** - Critical CSS, optimization
-8. **css-modern** - Custom properties, container queries
-
-### 🛠️ 4 Interactive Commands
-
-```bash
-/learn-css [topic]       # Learn CSS topics with structured paths
-/css-playground [cat]    # Interactive CSS examples & playground
-/css-inspector [action]  # Analyze, debug & optimize CSS
-/css-projects [level]    # 50+ hands-on projects
-```
-
-### 🎯 50+ Projects
-
-- **10 Beginner** (20-40 hours each)
-- **10 Intermediate** (40-80 hours each)
-- **10 Advanced** (80-150 hours each)
-- **20+ Specialized** (frameworks, animations, systems)
-
-## 📊 Plugin Overview
-
-```
-Custom Plugin CSS/
-├── .claude-plugin/
-│   └── plugin.json ........................ Plugin manifest
-├── agents/ .............................. 7 Agent files
-│   ├── 01-css-fundamentals.md
-│   ├── 02-css-layout-master.md
-│   ├── 03-css-animations.md
-│   ├── 04-css-architecture.md
-│   ├── 05-css-preprocessors.md
-│   ├── 06-css-performance.md
-│   └── 07-css-modern-features.md
-├── commands/ ........................... 4 Commands
-│   ├── learn-css.md
-│   ├── css-playground.md
-│   ├── css-inspector.md
-│   └── css-projects.md
-├── skills/ ............................. 8 Skills
-│   ├── css-fundamentals/SKILL.md
-│   ├── css-flexbox-grid/SKILL.md
-│   ├── css-animations/SKILL.md
-│   ├── css-architecture/SKILL.md
-│   ├── css-sass/SKILL.md
-│   ├── css-tailwind/SKILL.md
-│   ├── css-performance/SKILL.md
-│   └── css-modern/SKILL.md
-├── hooks/
-│   └── hooks.json ...................... Automation hooks
-└── README.md
-```
-
-## 🎯 Learning Paths
-
-### Path 1: Complete Beginner → Expert
-1. `/learn-css fundamentals` (20-40h)
-2. `/learn-css layouts` (30-50h)
-3. `/learn-css responsive` (20-30h)
-4. `/learn-css animations` (25-40h)
-5. `/learn-css frameworks` (35-55h)
-**Total: 130-215 hours**
-
-### Path 2: Intermediate → Expert
-1. `/learn-css layouts`
-2. `/learn-css frameworks`
-3. `/learn-css css-in-js`
-4. `/learn-css performance`
-**Total: 100-180 hours**
-
-### Path 3: Advanced Focus
-1. `/learn-css animations`
-2. `/learn-css transforms`
-3. `/learn-css performance`
-4. `/learn-css design-systems`
-**Total: 80-150 hours**
-
-## 💡 Usage Examples
-
-### Learn a Topic
-```bash
-/learn-css fundamentals
-```
-Get structured lessons with examples and best practices.
-
-### Practice Interactively
-```bash
-/css-playground flexbox-intro beginner
-```
-Explore interactive examples with live code editor.
-
-### Debug Your CSS
-```bash
-/css-inspector optimize
-```
-Get optimization suggestions and performance tips.
-
-### Build Projects
-```bash
-/css-projects intermediate
-```
-Find engaging projects matching your skill level.
-
-## 🎓 Topics Covered
-
-### Fundamentals ✓
-- Selectors & specificity
-- Box model & margins
-- Typography & colors
-- Display & positioning
-- Units & values
-
-### Layouts ✓
-- Flexbox (flex-direction, justify-content, align-items)
-- CSS Grid (grid-template, areas, auto-fit)
-- Responsive design & media queries
-- Mobile-first approach
-- Layout patterns & techniques
-
-### Frameworks ✓
-- **Tailwind CSS** - Utility-first approach
-- **Bootstrap** - Component framework
-- **SASS/SCSS** - CSS preprocessing
-- **LESS** - Dynamic styles
-- **PostCSS** - CSS transformations
-
-### CSS-in-JS ✓
-- **styled-components** - CSS-in-JS library
-- **Emotion** - Lightweight CSS-in-JS
-- **CSS Modules** - Local scoping
-- **BEM Methodology** - Scalable architecture
-- **Atomic CSS** - Utility patterns
-
-### Advanced ✓
-- Keyframe animations & transitions
-- 2D & 3D transforms
-- Performance optimization
-- CSS accessibility (WCAG)
-- Advanced selectors (:has, :is, :where)
-- Container queries & cutting-edge CSS
-
-## 📈 Progression Map
-
-```
-Beginner Projects (Simple Forms, Cards, Layouts)
-            ↓
-Master Fundamentals & Layouts
-            ↓
-Intermediate Projects (Components, Animations)
-            ↓
-Learn Frameworks & Advanced Techniques
-            ↓
-Advanced Projects (Design Systems, Optimization)
-            ↓
-Expert Portfolio (Production-Ready Code)
-```
-
-## 🌟 Plugin Highlights
-
-✅ **7 Agents** - Specialized expertise
-✅ **8 Skills** - Comprehensive guides with code
-✅ **4 Commands** - Interactive learning tools
-✅ **50+ Projects** - Real portfolio pieces
-✅ **100+ Examples** - Practical code snippets
-✅ **250+ Hours** - Complete learning content
-✅ **Production Ready** - Professional quality
-✅ **Free & Open** - Accessible to all
-
-## 🎯 For Different Users
-
-### 🔰 Complete Beginners
-- Start: `/learn-css fundamentals`
-- Follow: Beginner projects
-- Time: 130-215 hours to expert
-
-### 🚀 Experienced Developers
-- Start: `/learn-css layouts`
-- Jump to: Intermediate/advanced
-- Time: 80-150 hours to mastery
-
-### 🎨 Designers Learning Code
-- Start: `/learn-css fundamentals`
-- Focus: Responsive design & frameworks
-- Time: 100-150 hours
-
-### 💼 Interview Preparation
-- Study: All 7 agents systematically
-- Practice: CSS projects portfolio
-- Time: 150-200 hours
-
-## 📚 Resources Included
-
-Each topic includes:
-- **Core Concepts** - Explained clearly
-- **Code Examples** - Practical snippets
-- **Best Practices** - Industry standards
-- **Common Mistakes** - What to avoid
-- **Projects** - Hands-on practice
-- **Performance Tips** - Optimization
-- **Tools** - Recommended resources
-
-## 🔧 Agent Tools
-
-### CSS Inspector Features
-- 📊 Performance analysis
-- 🔍 Accessibility checking
-- 🐛 Debugging assistance
-- ⚡ Optimization suggestions
-- 📈 Metrics & metrics
-
-### CSS Playground Features
-- 💻 Live code editor
-- 👁️ Real-time preview
-- 📚 Explanations
-- 🔗 Variation examples
-- 💾 Save & share
-
-### Project Builder
-- 📋 Project descriptions
-- ✅ Feature checklist
-- 🎯 Learning outcomes
-- 🚀 Deployment guide
-- 📝 Code review guide
-
-## 🚀 Getting Started Now
-
-1. **Install Plugin**
-   ```bash
-   claude add custom-plugin-css
-   ```
-
-2. **Choose Your Path**
-   ```bash
-   /learn-css fundamentals    # Beginner
-   /learn-css layouts         # Intermediate
-   /learn-css advanced        # Advanced
-   ```
-
-3. **Practice**
-   ```bash
-   /css-playground [category] [difficulty]
-   /css-projects [difficulty]
-   ```
-
-4. **Optimize**
-   ```bash
-   /css-inspector optimize
-   /css-inspector performance
-   ```
-
-## 📊 Statistics
-
-- **7 Agents** - Specialized expertise
-- **8 Skills** - Comprehensive guides
-- **4 Commands** - Interactive tools
-- **50+ Projects** - Real practice
-- **100+ Code Examples** - Practical reference
-- **250+ Hours** - Complete content
-- **All Skill Levels** - Beginner to expert
-
-## 🎓 Certifications & Goals
-
-After completing this plugin, you'll be able to:
-
-✓ Master CSS fundamentals
-✓ Create responsive layouts
-✓ Use modern frameworks
-✓ Optimize CSS performance
-✓ Ensure accessibility
-✓ Build design systems
-✓ Write production-ready CSS
-✓ Mentor others in CSS
-
-## 📄 License
-
-MIT License - Free for personal and commercial use
-
-## 🔗 Resources
-
-- **GitHub:** https://github.com/pluginagentmarketplace/custom-plugin-css
-- **Claude Docs:** https://docs.claude.com
-
-## 💬 Support
-
-Need help? Check:
-- Agent guides (detailed expertise)
-- Skill files (how-to guides)
-- Command documentation (quick reference)
-- Project descriptions (requirements)
-
----
-
-**Master CSS. Build beautiful web experiences. Start now! 🎨**
-
-**Version:** 2.0.0 | **Status:** Production Ready ✅ | **License:** MIT
-
-
----
-
-## Contributing
-
-We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
-
-### Quick Start
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'feat: add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-
----
-
 <div align="center">
 
-**Style beautiful interfaces with AI!**
+<!-- Animated Typing Banner -->
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=2E9EF7&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=100&lines=Css+Assistant;7+Agents+%7C+8+Skills;Claude+Code+Plugin" alt="Css Assistant" />
 
-[![Made for Css](https://img.shields.io/badge/Made%20for-Css-1572B6?style=for-the-badge&logo=css3)](https://github.com/pluginagentmarketplace/custom-plugin-css)
+<br/>
 
-**Built by Dr. Umit Kacar & Muhsin Elcicek**
+<!-- Badge Row 1: Status Badges -->
+[![Version](https://img.shields.io/badge/Version-2.0.0-blue?style=for-the-badge)](https://github.com/pluginagentmarketplace/custom-plugin-css/releases)
+[![License](https://img.shields.io/badge/License-Custom-yellow?style=for-the-badge)](LICENSE)
+[![Status](https://img.shields.io/badge/Status-Production-brightgreen?style=for-the-badge)](#)
+[![SASMP](https://img.shields.io/badge/SASMP-v1.3.0-blueviolet?style=for-the-badge)](#)
+
+<!-- Badge Row 2: Content Badges -->
+[![Agents](https://img.shields.io/badge/Agents-7-orange?style=flat-square&logo=robot)](#-agents)
+[![Skills](https://img.shields.io/badge/Skills-8-purple?style=flat-square&logo=lightning)](#-skills)
+[![Commands](https://img.shields.io/badge/Commands-4-green?style=flat-square&logo=terminal)](#-commands)
+
+<br/>
+
+<!-- Quick CTA Row -->
+[📦 **Install Now**](#-quick-start) · [🤖 **Explore Agents**](#-agents) · [📖 **Documentation**](#-documentation) · [⭐ **Star this repo**](https://github.com/pluginagentmarketplace/custom-plugin-css)
+
+---
+
+### What is this?
+
+> **Css Assistant** is a Claude Code plugin with **7 agents** and **8 skills** for css development.
 
 </div>
 
 ---
 
-## ⚠️ Security Notice
+## 📑 Table of Contents
 
-> **Important:** This repository contains third-party code and dependencies.
-> - Always review code before using in production
-> - Check dependencies for known vulnerabilities
-> - Follow security best practices
-> - Report security issues privately
+<details>
+<summary>Click to expand</summary>
+
+- [Quick Start](#-quick-start)
+- [Features](#-features)
+- [Agents](#-agents)
+- [Skills](#-skills)
+- [Commands](#-commands)
+- [Documentation](#-documentation)
+- [Contributing](#-contributing)
+- [License](#-license)
+
+</details>
+
+---
+
+## 🚀 Quick Start
+
+### Prerequisites
+
+- Claude Code CLI v2.0.27+
+- Active Claude subscription
+
+### Installation (Choose One)
+
+<details open>
+<summary><strong>Option 1: From Marketplace (Recommended)</strong></summary>
+
+```bash
+# Step 1️⃣ Add the marketplace
+/plugin add marketplace pluginagentmarketplace/custom-plugin-css
+
+# Step 2️⃣ Install the plugin
+/plugin install css-development-assistant@pluginagentmarketplace-css
+
+# Step 3️⃣ Restart Claude Code
+# Close and reopen your terminal/IDE
+```
+
+</details>
+
+<details>
+<summary><strong>Option 2: Local Installation</strong></summary>
+
+```bash
+# Clone the repository
+git clone https://github.com/pluginagentmarketplace/custom-plugin-css.git
+cd custom-plugin-css
+
+# Load locally
+/plugin load .
+
+# Restart Claude Code
+```
+
+</details>
+
+### ✅ Verify Installation
+
+After restart, you should see these agents:
+
+```
+css-development-assistant:01-css-fundamentals
+css-development-assistant:02-css-layout-master
+css-development-assistant:03-css-animations
+css-development-assistant:04-css-architecture
+css-development-assistant:05-css-preprocessors
+... and 2 more
+```
+
+---
+
+## ✨ Features
+
+| Feature | Description |
+|---------|-------------|
+| 🤖 **7 Agents** | Specialized AI agents for css tasks |
+| 🛠️ **8 Skills** | Reusable capabilities with Golden Format |
+| ⌨️ **4 Commands** | Quick slash commands |
+| 🔄 **SASMP v1.3.0** | Full protocol compliance |
+
+---
+
+## 🤖 Agents
+
+### 7 Specialized Agents
+
+| # | Agent | Purpose |
+|---|-------|---------|
+| 1 | **01-css-fundamentals** | Master CSS basics including selectors, specificity, box model, typography |
+| 2 | **02-css-layout-master** | Flexbox, CSS Grid, responsive design, layout patterns |
+| 3 | **03-css-animations** | Keyframes, transitions, performance optimization |
+| 4 | **04-css-architecture** | BEM, SMACSS, design systems, scalability |
+| 5 | **05-css-preprocessors** | Sass, PostCSS, Tailwind, CSS Modules |
+| 6 | **06-css-performance** | Critical CSS, code splitting, optimization |
+| 7 | **07-css-modern-features** | Custom properties, :has(), @layer, container queries |
+
+---
+
+## 🛠️ Skills
+
+### Available Skills
+
+| Skill | Description | Invoke |
+|-------|-------------|--------|
+| `css-fundamentals` | Selectors, specificity, box model | `Skill("css-development-assistant:css-fundamentals")` |
+| `css-flexbox-grid` | Flexbox & CSS Grid layouts | `Skill("css-development-assistant:css-flexbox-grid")` |
+| `css-animations` | Keyframes, transitions, motion | `Skill("css-development-assistant:css-animations")` |
+| `css-architecture` | BEM, SMACSS, design systems | `Skill("css-development-assistant:css-architecture")` |
+| `css-sass` | Sass/SCSS preprocessing | `Skill("css-development-assistant:css-sass")` |
+| `css-tailwind` | Utility-first CSS framework | `Skill("css-development-assistant:css-tailwind")` |
+| `css-performance` | Critical CSS, optimization | `Skill("css-development-assistant:css-performance")` |
+| `css-modern` | Custom properties, container queries | `Skill("css-development-assistant:css-modern")` |
+
+---
+
+## ⌨️ Commands
+
+| Command | Description |
+|---------|-------------|
+| `/learn-css` | Learn CSS topics with structured paths |
+| `/css-playground` | Interactive CSS examples & playground |
+| `/css-inspector` | Analyze, debug & optimize CSS |
+| `/css-projects` | 50+ hands-on projects |
+
+---
+
+## 📚 Documentation
+
+| Document | Description |
+|----------|-------------|
+| [CHANGELOG.md](CHANGELOG.md) | Version history |
+| [CONTRIBUTING.md](CONTRIBUTING.md) | How to contribute |
+| [LICENSE](LICENSE) | License information |
+
+---
+
+## 📁 Project Structure
+
+<details>
+<summary>Click to expand</summary>
+
+```
+custom-plugin-css/
+├── 📁 .claude-plugin/
+│   ├── plugin.json
+│   └── marketplace.json
+├── 📁 agents/              # 7 agents
+├── 📁 skills/              # 8 skills (Golden Format)
+├── 📁 commands/            # 4 commands
+├── 📁 hooks/
+├── 📄 README.md
+├── 📄 CHANGELOG.md
+└── 📄 LICENSE
+```
+
+</details>
 
 ---
 
@@ -420,7 +197,67 @@ We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) f
 
 | Field | Value |
 |-------|-------|
-| **Last Updated** | 2025-12-29 |
-| **Maintenance Status** | Active |
-| **SASMP Version** | 1.3.0 |
-| **Support** | [Issues](../../issues) |
+| **Version** | 2.0.0 |
+| **Last Updated** | 2025-12-31 |
+| **Status** | Production Ready |
+| **SASMP** | v1.3.0 |
+| **Agents** | 7 |
+| **Skills** | 8 |
+| **Commands** | 4 |
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please read our [Contributing Guide](CONTRIBUTING.md).
+
+1. Fork the repository
+2. Create your feature branch
+3. Follow the Golden Format for new skills
+4. Submit a pull request
+
+---
+
+## ⚠️ Security
+
+> **Important:** This repository contains third-party code and dependencies.
+>
+> - ✅ Always review code before using in production
+> - ✅ Check dependencies for known vulnerabilities
+> - ✅ Follow security best practices
+> - ✅ Report security issues privately via [Issues](../../issues)
+
+---
+
+## 📝 License
+
+Copyright © 2025 **Dr. Umit Kacar** & **Muhsin Elcicek**
+
+Custom License - See [LICENSE](LICENSE) for details.
+
+---
+
+## 👥 Contributors
+
+<table>
+<tr>
+<td align="center">
+<strong>Dr. Umit Kacar</strong><br/>
+Senior AI Researcher & Engineer
+</td>
+<td align="center">
+<strong>Muhsin Elcicek</strong><br/>
+Senior Software Architect
+</td>
+</tr>
+</table>
+
+---
+
+<div align="center">
+
+**Made with ❤️ for the Claude Code Community**
+
+[![GitHub](https://img.shields.io/badge/GitHub-pluginagentmarketplace-black?style=for-the-badge&logo=github)](https://github.com/pluginagentmarketplace)
+
+</div>
