@@ -7,10 +7,7 @@
     "name": "CSS Plugin Team",
     "url": "https://github.com/pluginagentmarketplace"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/pluginagentmarketplace/custom-plugin-css.git"
-  },
+  "repository": "https://github.com/pluginagentmarketplace/custom-plugin-css.git",
   "license": "SEE LICENSE IN LICENSE",
   "keywords": [
     "css",
