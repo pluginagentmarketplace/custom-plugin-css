@@ -63,7 +63,7 @@
 
 ```bash
 # Step 1️⃣ Add the marketplace
-/plugin add marketplace pluginagentmarketplace/custom-plugin-css
+/plugin marketplace add pluginagentmarketplace/custom-plugin-css
 
 # Step 2️⃣ Install the plugin
 /plugin install css-development-assistant@pluginagentmarketplace-css
